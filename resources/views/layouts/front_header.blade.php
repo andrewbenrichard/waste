@@ -4,7 +4,7 @@
 <!-- animate scss -->
 <link rel="stylesheet" href="public/assets/front/css/animate.css">
  {{-- vue styles--}}
- <link href="{{ asset('css/front_app.css') }}" rel="stylesheet">
+ <link href="{{ asset('public/css/front_app.css') }}" rel="stylesheet">
 <link href="public/assets/front/css/font-awesome.min.css" rel="stylesheet">
 <link href="public/assets/front/css/line-awesome.min.css" rel="stylesheet">
 <link href="public/assets/front/css/barfiller.css" rel="stylesheet">
