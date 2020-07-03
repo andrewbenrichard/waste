@@ -12413,34 +12413,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
@@ -87522,7 +87494,7 @@ var staticRenderFns = [
                   _c("div", { staticClass: "section-title" }, [
                     _c("h1", [
                       _vm._v(
-                        "\n                                    short content "
+                        "\n                  short content\n                  "
                       ),
                       _c("b", [_vm._v("For this header")])
                     ]),
@@ -87546,7 +87518,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "section-title" }, [
                   _c("h1", [
                     _vm._v(
-                      "\n                                    short content "
+                      "\n                  short content\n                  "
                     ),
                     _c("b", [_vm._v("For this header")])
                   ]),
@@ -87573,7 +87545,10 @@ var staticRenderFns = [
             _c("div", { staticClass: "about-left" }, [
               _c("img", {
                 staticClass: "lazy-image loaded",
-                attrs: { src: "assets/front/img/recycle_home.gif", alt: "" }
+                attrs: {
+                  src: "public/assets/front/img/recycle_home.gif",
+                  alt: ""
+                }
               })
             ])
           ]),
@@ -87585,7 +87560,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("h2", [
                   _vm._v(
-                    "\n                                Sustainable Africa Waste "
+                    "\n                Sustainable Africa Waste\n                "
                   ),
                   _c("b", [_vm._v("Initiative")])
                 ])
@@ -87593,7 +87568,7 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n                            SAWI is a Non-Governmental and not for profit\n                            organization with specific focus on Sustainable\n                            Management of WASTE in Africa. Waste is a global\n                            phenomenal which requires scientific approach\n                            with effective government policy to be able to\n                            efficiently harness its opportunity and avoid\n                            its threat. Efficient handling of waste helps in\n                            combating global warming, pollution, and\n                            improper sanitation, promote healthy living and\n                            balanced ecosystem.\n                        "
+                  "\n              SAWI is a Non-Governmental and not for profit\n              organization with specific focus on Sustainable\n              Management of WASTE in Africa. Waste is a global\n              phenomenal which requires scientific approach\n              with effective government policy to be able to\n              efficiently harness its opportunity and avoid\n              its threat. Efficient handling of waste helps in\n              combating global warming, pollution, and\n              improper sanitation, promote healthy living and\n              balanced ecosystem.\n            "
                 )
               ]),
               _vm._v(" "),
@@ -87636,7 +87611,7 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
-                        "\n                                        We envisioned SAWI to be the go-to\n                                        organization for capacity building,\n                                        data exploration and policy guides\n                                        for waste management and allied\n                                        fields in Africa … LEARN MORE\n                                    "
+                        "\n                    We envisioned SAWI to be the go-to\n                    organization for capacity building,\n                    data exploration and policy guides\n                    for waste management and allied\n                    fields in Africa … LEARN MORE\n                  "
                       )
                     ])
                   ])
@@ -87650,7 +87625,7 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
-                        "\n                                        Develop capacity for Municipal Waste\n                                        Management in Nigeria through\n                                        regular Environmental Education and\n                                        Awareness Programs …\n                                    "
+                        "\n                    Develop capacity for Municipal Waste\n                    Management in Nigeria through\n                    regular Environmental Education and\n                    Awareness Programs …\n                  "
                       )
                     ])
                   ])
@@ -87669,9 +87644,12 @@ var staticRenderFns = [
     return _c("div", { staticClass: "event-area section-padding" }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-lg-12 mar-bt-30 text-center " }, [
+          _c("div", { staticClass: "col-lg-12 mar-bt-30 text-center" }, [
             _c("div", { staticClass: "section-title" }, [
-              _c("h2", [_vm._v("Our "), _c("b", [_vm._v("Events")])]),
+              _c("h2", [
+                _vm._v("\n              Our\n              "),
+                _c("b", [_vm._v("Events")])
+              ]),
               _vm._v(" "),
               _c("h6", [_vm._v("No Events")])
             ])
@@ -87691,14 +87669,14 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "col-lg-6 text-center" }, [
             _c("h2", [
-              _vm._v("How can you "),
+              _vm._v("\n            How can you\n            "),
               _c("b", [_vm._v("help")]),
-              _vm._v("?")
+              _vm._v("?\n          ")
             ]),
             _vm._v(" "),
             _c("p", [
               _vm._v(
-                "\n                        Your donation will We Encourage and drive the birth\n                        OF VIABLE waste industry in Nigeria\n                    "
+                "\n            Your donation will We Encourage and drive the birth\n            OF VIABLE waste industry in Nigeria\n          "
               )
             ]),
             _vm._v(" "),
@@ -87896,7 +87874,7 @@ var staticRenderFns = [
                   _c("a", { attrs: { href: "tel://+2348117088281" } }, [
                     _c("i", { staticClass: "fa fa-map-marker" }),
                     _vm._v(
-                      " Call us\n                                +234 811 708 8281.\n                            "
+                      " Call us\n                +234 811 708 8281.\n              "
                     )
                   ])
                 ]),
@@ -87905,7 +87883,7 @@ var staticRenderFns = [
                   _c("a", { attrs: { href: "mailto:info@sawi-env.org" } }, [
                     _c("i", { staticClass: "fa fa-envelope" }),
                     _vm._v(
-                      "\n                                info@sawi-env.org\n                            "
+                      "\n                info@sawi-env.org\n              "
                     )
                   ])
                 ])
@@ -87944,7 +87922,7 @@ var staticRenderFns = [
                       [
                         _c("img", {
                           attrs: {
-                            src: "assets/front/img/main-logo.png",
+                            src: "public/assets/front/img/main-logo.png",
                             alt: ""
                           }
                         })
@@ -87994,11 +87972,7 @@ var staticRenderFns = [
                                   staticClass: "nav-link active",
                                   attrs: { href: "#" }
                                 },
-                                [
-                                  _vm._v(
-                                    "\n                                                    Home\n                                                "
-                                  )
-                                ]
+                                [_vm._v("Home")]
                               )
                             ]),
                             _vm._v(" "),
