@@ -2,407 +2,205 @@
   <div class="about__holder">
     <topHeader />
 
-    <!-- Page Header Section Start Here -->
-    <section class="page-header style-2">
-      <div class="container">
-        <div class="page-title text-center">
-          <h3>About Our Mezban</h3>
-          <ul class="breadcrumb">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>About</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- Page Header Section Ending Here -->
+    <!-- Breadcroumb Area -->
 
-    <!-- About Section Start here -->
-    <section class="about about-page padding-tb">
+    <div class="breadcroumb-area bread-bg">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-12">
-            <div class="about-thumb">
-              <img src="/assets/front/images/about/01.png" alt="about-food" />
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcroumb-title text-center">
+              <h1>About Us</h1>
+              <h6>
+                <router-link to="/">Home</router-link>/ About Us
+              </h6>
             </div>
           </div>
-          <div class="col-lg-6 col-12">
+        </div>
+      </div>
+    </div>
+
+    <!-- About Area-->
+
+    <div class="about-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img src="assets/img/about-us.jpg" alt />
+            </div>
+          </div>
+          <div class="col-lg-5">
             <div class="about-content">
-              <div class="section-header">
-                <span>Welcome Mezban</span>
-                <h3>About Restaurant History!</h3>
+              <div class="section-title">
+                <h6>A little Bit About Us</h6>
               </div>
-              <div class="section-wrapper">
-                <p>Synergistca conceptualize leveraged inte ectual capital through virtual and the a and Proactiviely initiate lrisk highyield a platforms after realtme froms growth that awesome tently matrix robusti method powerm foistcky Sytical concepta leved ntelectua anding capita hrough virtua nteectua that capta the and Proactiviely initiate low risk highyield platforms after realtme froms that there andin Proctive initate low risk high yeld platform aftering Conven iterate optimal paradigms reliable techno</p>
-                <a href="#" class="food-btn style-2">
-                  <span>get diraction</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About Section Ending here -->
 
-    <!-- Popular Home Chef Section Start Here -->
-    <section class="popular-chef padding-tb" style="background-color: #fafeff;">
-      <div class="container">
-        <div class="section-header">
-          <h3>Popular HomeChef</h3>
-          <p>Completely network impactful users whereas next-generation applications engage out thinking via tactical action.</p>
-        </div>
-        <div class="section-wrapper">
-          <div class="row justify-content-center">
-            <div class="col-xl-4 col-md-6 col-12">
-              <div class="chef-item">
-                <div class="chef-inner">
-                  <div class="chef-thumb">
-                    <img src="/assets/front/images/chef/01.jpg" alt="food-chef" />
-                  </div>
-                  <div class="chef-content">
-                    <div class="chef-author">
-                      <a href="#">
-                        <img src="/assets/front/images/chef/author/07.jpg" alt="chef-author" />
-                      </a>
-                    </div>
-                    <h5>
-                      <a href="#">Sanzida laila Trisha</a>
-                    </h5>
-                    <p>Month Top Homechef</p>
-                    <div class="scocial-share">
-                      <a href="#" class="food-btn">
-                        <span>
-                          <i class="icofont-ui-user"></i> follow
-                        </span>
-                      </a>
-                    </div>
-                    <div class="chef-footer">
-                      <div class="chef-earn chef-con">
-                        <h6>$290.00</h6>
-                        <a href="#">Earned</a>
-                      </div>
-                      <div class="chef-menu chef-con">
-                        <h6>96</h6>
-                        <a href="#">Food Menu</a>
-                      </div>
-                      <div class="chef-recipe chef-con">
-                        <h6>33</h6>
-                        <a href="#">Recipe</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12">
-              <div class="chef-item">
-                <div class="chef-inner">
-                  <div class="chef-thumb">
-                    <img src="/assets/front/images/chef/02.jpg" alt="food-chef" />
-                  </div>
-                  <div class="chef-content">
-                    <div class="chef-author">
-                      <a href="#">
-                        <img src="/assets/front/images/chef/author/08.jpg" alt="chef-author" />
-                      </a>
-                    </div>
-                    <h5>
-                      <a href="#">Jinnat Raihun Sumi</a>
-                    </h5>
-                    <p>Month Top Homechef</p>
-                    <div class="scocial-share">
-                      <a href="#" class="food-btn">
-                        <span>
-                          <i class="icofont-ui-user"></i> follow
-                        </span>
-                      </a>
-                    </div>
-                    <div class="chef-footer">
-                      <div class="chef-earn chef-con">
-                        <h6>$290.00</h6>
-                        <a href="#">Earned</a>
-                      </div>
-                      <div class="chef-menu chef-con">
-                        <h6>96</h6>
-                        <a href="#">Food Menu</a>
-                      </div>
-                      <div class="chef-recipe chef-con">
-                        <h6>33</h6>
-                        <a href="#">Recipe</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12">
-              <div class="chef-item">
-                <div class="chef-inner">
-                  <div class="chef-thumb">
-                    <img src="/assets/front/images/chef/03.jpg" alt="food-chef" />
-                  </div>
-                  <div class="chef-content">
-                    <div class="chef-author">
-                      <a href="#">
-                        <img src="/assets/front/images/chef/author/09.jpg" alt="chef-author" />
-                      </a>
-                    </div>
-                    <h5>
-                      <a href="#">Shahana Anam Khan</a>
-                    </h5>
-                    <p>Month Top Homechef</p>
-                    <div class="scocial-share">
-                      <a href="#" class="food-btn">
-                        <span>
-                          <i class="icofont-ui-user"></i> follow
-                        </span>
-                      </a>
-                    </div>
-                    <div class="chef-footer">
-                      <div class="chef-earn chef-con">
-                        <h6>$290.00</h6>
-                        <a href="#">Earned</a>
-                      </div>
-                      <div class="chef-menu chef-con">
-                        <h6>96</h6>
-                        <a href="#">Food Menu</a>
-                      </div>
-                      <div class="chef-recipe chef-con">
-                        <h6>33</h6>
-                        <a href="#">Recipe</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <p>SAWI is a Non-Governmental and not for profit organization with specific focus on Sustainable Management of WASTE in Africa. Waste is a global phenomenal which requires scientific approach with effective government policy to be able to efficiently harness its opportunity and avoid its threat. Efficient handling of waste helps in combating global warming, pollution, and improper sanitation, promote healthy living and balanced ecosystem.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Popular Home Chef Section Ending Here -->
+    </div>
 
-    <!-- Booking Table Section Start Here -->
-    <section class="booking-table padding-tb">
-      <div class="shape-1">
-        <img src="/assets/front/images/banner/shape/02.png" alt="banner" />
-      </div>
-      <div class="shape-2">
-        <img src="/assets/front/images/banner/shape/02.png" alt="banner" />
-      </div>
-      <div class="container">
-        <div class="section-header">
-          <h3>Book a Online Table</h3>
-          <p>Completely network impactful users whereas next-generation applications engage out thinking via tactical action.</p>
-        </div>
-        <div class="section-wrapper">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 col-12">
-              <div class="bg-table"></div>
-            </div>
-            <div class="col-lg-6 col-12">
-              <div class="contact-form">
-                <form action="https://www.foxcoders.com/">
-                  <input type="text" name="name" placeholder="Full Name*" />
-                  <input type="email" name="email" placeholder="Your Eamil*" />
-                  <input type="text" name="number" placeholder="Phone Number" />
-                  <div class="res-tab time-zone">
-                    <select>
-                      <option value="1">Enter Time</option>
-                      <option value="2">10:00 AM</option>
-                      <option value="3">11:00 AM</option>
-                      <option value="4">12:00 PM</option>
-                      <option value="5">01:00 PM</option>
-                      <option value="6">02:00 PM</option>
-                      <option value="7">03:00 PM</option>
-                      <option value="8">04:00 PM</option>
-                      <option value="9">05:00 PM</option>
-                    </select>
-                  </div>
-                  <div class="res-tab table-zone">
-                    <select>
-                      <option value="1">Table Size</option>
-                      <option value="2">2F - 3F</option>
-                      <option value="3">2.5F - 3.5F</option>
-                      <option value="4">3F - 4F</option>
-                      <option value="5">3.5F - 4.5F</option>
-                      <option value="6">4F - 5F</option>
-                      <option value="7">4.5F - 5.5F</option>
-                      <option value="8">5F - 6F</option>
-                      <option value="9">5.5F - 6.5F</option>
-                    </select>
-                  </div>
-                  <input type="date" name="time" data-provide="datepicker" />
-                  <textarea name="message" rows="6" placeholder="Message"></textarea>
-                  <button type="submit" class="food-btn style-2">
-                    <span>book a table</span>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Booking Table Section Ending Here -->
+    <!-- Feature Area -->
 
-    <!-- Testimonial Section Start Here -->
-    <section
-      class="testimonial padding-tb"
-      style="background-image: url(/assets/front/css/bg-image/category-bg.jpg); background-size: cover;"
-    >
+    <div class="feature-area">
       <div class="container">
-        <div class="section-wrapper">
-          <div class="quete-thumb">
-            <img src="/assets/front/images/testimonial/icon/01.jpg" alt="food-quete" />
-          </div>
-          <div id="demo" class="carousel slide vert">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="testi-item">
-                  <p>Extend Accurate Services Long Term High Impact Experiences Interactiv Streamline Team Compelingly Simplify Solutions Before Technicaly Sound Leadership Skills Creative Holstic Process Improvements Proactively Streamline Alternative Niche Markets Forwor Resource Conveniently cultivate pandemic technology and corporate.</p>
-                  <h6>
-                    Somrat Islam
-                    <span>(UI Designer)</span>
-                  </h6>
-                  <div class="rating">
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                  </div>
-                </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-feature-item">
+              <div class="feature-icon">
+                <i class="flaticon-donation-1"></i>
               </div>
-              <div class="carousel-item">
-                <div class="testi-item">
-                  <p>Extend Accurate Services Long Term High Impact Experiences Interactiv Streamline Team Compelingly Simplify Solutions Before Technicaly Sound Leadership Skills Creative Holstic Process Improvements Proactively Streamline Alternative Niche Markets Forwor Resource Conveniently cultivate pandemic technology and corporate.</p>
-                  <h6>
-                    Somrat Islam
-                    <span>(UI Designer)</span>
-                  </h6>
-                  <div class="rating">
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="testi-item">
-                  <p>Extend Accurate Services Long Term High Impact Experiences Interactiv Streamline Team Compelingly Simplify Solutions Before Technicaly Sound Leadership Skills Creative Holstic Process Improvements Proactively Streamline Alternative Niche Markets Forwor Resource Conveniently cultivate pandemic technology and corporate.</p>
-                  <h6>
-                    Somrat Islam
-                    <span>(UI Designer)</span>
-                  </h6>
-                  <div class="rating">
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                    <i class="icofont-star"></i>
-                  </div>
-                </div>
-              </div>
+              <h5>Our Vision</h5>
+              <p>
+                We envisioned SAWI to be the go-to organization
+                for capacity building, data exploration and policy guides
+                for waste management and allied fields in Africa
+              </p>
             </div>
-            <div class="carousel-indicators">
-              <div data-target="#demo" data-slide-to="0" class="item active">
-                <img src="/assets/front/images/testimonial/01.jpg" alt />
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-feature-item">
+              <div class="feature-icon">
+                <i class="flaticon-charity"></i>
               </div>
-              <div data-target="#demo" data-slide-to="1" class="item">
-                <img src="/assets/front/images/testimonial/02.jpg" alt />
-              </div>
-              <div data-target="#demo" data-slide-to="2" class="item">
-                <img src="/assets/front/images/testimonial/03.jpg" alt />
-              </div>
+              <h5>Our Objectives</h5>
+              <p>
+                Develop capacity for Municipal Waste Management
+                in Nigeria through regular Environmental
+                Education and Awareness Programs
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="about-image">
+              <img src="assets/img/about-us.jpg" alt />
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Testimonial Section Ending Here -->
+    </div>
 
-    <!-- Sponsor Section Start Here -->
-    <div class="sponsor-section">
+    <div class="about-area section-padding">
       <div class="container">
-        <div class="section-wrapper">
-          <div class="sponsor-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="sponsor-item">
-                  <div class="sponsor-thumb">
-                    <a href="#">
-                      <img src="/assets/front/images/sponsor/01.png" alt="food-sopnsor" />
-                    </a>
-                  </div>
-                </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img src="assets/img/about-us.jpg" alt />
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="about-content">
+              <div class="section-title">
+                <h6>A little Bit About Us</h6>
               </div>
-              <div class="swiper-slide">
-                <div class="sponsor-item">
-                  <div class="sponsor-thumb">
-                    <a href="#">
-                      <img src="/assets/front/images/sponsor/02.png" alt="food-sopnsor" />
-                    </a>
-                  </div>
-                </div>
+              <p>The challenges of managing both the threat and opportunity posed by human waste have become a daunting one on the continent of Africa. Most Africa countries have close to no strategy, policy, political will to combat the menace and its far-reaching effects. Unfortunately, the larger percentage of the population in Africa suffers the adverse effect of the poor management of waste, with women and children being the most affected. Most dumpsites are located in a densely populated rural areas or slum where majority are living in abject poverty. Arbitrary dumpsites are also common sight on road kerbs and corners even in the urban areas where the local authorities have been practically overwhelmed by the challenges of Municipal Solid Waste, E-waste and hazardous waste like medical and chemical wastes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p>Certainly, there must be a deliberate systematic and sustainable approach which is scientific and technical in nature to curtail the negative effects of uncontrolled waste dump in Africa. This approach must be all inclusive to guarantee sustainability. Without this, achieving United Nations Sustainable Development Goals in Africa by 2030 may be a mere wish. Especially on</p>
+            <ul class="about_list">
+              <li>Goal 6 – Clean water and Sanitation</li>
+              <li>Goal 9 – Industry Innovation and Infrastructure</li>
+              <li>Goal 11 – Sustainable cities and communities</li>
+              <li>Goal 12 – Responsible Consumption and Production</li>
+              <li>Goal 13 – Climate Action</li>
+              <li>Goal 14 – Life under water</li>
+              <li>Goal 15 – Life on land.</li>
+              <li>Goal 17 – Partnership for the Goals</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="section-title">
+              <h2>
+                Our
+                <b>Objectives</b>
+              </h2>
+            </div>
+
+            <ul class="about_list">
+              <li>Develop capacity for Municipal Waste Management in Nigeria through regular Environmental Education and Awareness Programs</li>
+              <li>Analyze and encourage internalization of government policies on environment with specific focus on Waste Management in countries of Africa.</li>
+              <li>Develop, Collate, Analyze and manage Waste data for Industrial Development and policy management</li>
+              <li>Drive and encourage new approach to Waste Management in Nigeria and Africa through regular engagement with regulators, operators and generators.</li>
+              <li>Partnership for promotion of United Nations Sustainable Development Goals 6, 11, 12,13,14,15 and 17.</li>
+              <li>Environmental Advocacy, Awareness and Sensitization to communities, corporate entities, government and individuals for sustainability.</li>
+              <li>Encourage and drive the birth of viable waste industry in Nigeria and Africa.</li>
+              <li>Promote sustainable alternative energy use through waste conversion.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Programs Area -->
+
+    <div class="program-area gray-bg section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-title">
+              <h2>
+                Our
+                <b>Approach</b>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-list">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="single-program-item green-bg">
+                <i class="flaticon-food-donation"></i>
+                <h5>Engagement</h5>
+                <p>We shall engage with all relevant stake holders across communities and boundaries to spread the gospel of environmental sustainability, sustainable and socio-economic driven waste process management and so on. We will engage with governments, businesses, individuals and development partners for convergence of purpose and forging alliance to create a better world for now and future generations.</p>
               </div>
-              <div class="swiper-slide">
-                <div class="sponsor-item">
-                  <div class="sponsor-thumb">
-                    <a href="#">
-                      <img src="/assets/front/images/sponsor/03.png" alt="food-sopnsor" />
-                    </a>
-                  </div>
-                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="single-program-item yellow-bg">
+                <i class="flaticon-organization"></i>
+                <h5>Education</h5>
+                <p>We shall embark on continuous creation of awareness through various educative programs and activities. Organize continuous capacity development training for waste managers/handlers on train the trainer scheme. Rural and urban awareness campaign for environmental awareness, collaborate with development partners and other agencies to entrench environmental education in primary school curriculum.</p>
               </div>
-              <div class="swiper-slide">
-                <div class="sponsor-item">
-                  <div class="sponsor-thumb">
-                    <a href="#">
-                      <img src="/assets/front/images/sponsor/04.png" alt="food-sopnsor" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sponsor-item">
-                  <div class="sponsor-thumb">
-                    <a href="#">
-                      <img src="/assets/front/images/sponsor/05.png" alt="food-sopnsor" />
-                    </a>
-                  </div>
-                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="single-program-item">
+                <i class="flaticon-donation"></i>
+                <h5>Exploration</h5>
+                <p>Research and development studies, data gathering, analysis and management for industrial development.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Sponsor Section Ending Here -->
 
-    <!-- Newsletter Section Start Here -->
-    <div class="news-letter">
+    <!-- CTA Area-->
+
+    <div class="cta-area">
       <div class="container">
-        <div class="section-wrapper">
-          <div class="news-title">
-            <h3>For Newsletter</h3>
-          </div>
-          <div class="news-form">
-            <form action="https://www.foxcoders.com/">
-              <label>
-                <input type="email" name="email" placeholder="Enter Your Email" />
-              </label>
-              <input type="submit" name="submit" value="Subscribe now" />
-            </form>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>
+              A very small
+              <b>donation</b>
+              <br />can save the world
+            </h2>
+            <a href="#" class="main-btn">Become a Donor</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Newsletter Section Ending Here -->
 
     <Bottomfooter />
   </div>
@@ -413,9 +211,7 @@ import topHeader from "./layouts/header.vue";
 import Bottomfooter from "./layouts/footer.vue";
 
 export default {
-  mounted() {
-    console.log("Component mounted.");
-  },
+  mounted() {},
   components: {
     topHeader,
     Bottomfooter

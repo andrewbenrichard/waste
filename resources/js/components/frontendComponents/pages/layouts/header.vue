@@ -73,21 +73,21 @@
                     >
                       <ul class="navbar-nav m-auto">
                         <li class="nav-item active">
-                          <a class="nav-link active" href="#">Home</a>
+                          <router-link class="nav-link active" to="/">Home</router-link>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">About us +</a>
+                          <router-link class="nav-link" index="0" to="/about-us">About us +</router-link>
                           <ul class="sub-menu">
                             <li>
                               <a href="#">News/Media</a>
                             </li>
                             <li>
-                              <a href="#">Infographics</a>
+                              <router-link to="/infographics">Infographics</router-link>
                             </li>
                           </ul>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link">Gallery</a>
+                          <router-link class="nav-link" to="gallery">Gallery</router-link>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link">Events</a>

@@ -2185,214 +2185,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log("Component mounted.");
-  },
+  mounted: function mounted() {},
   components: {
     topHeader: _layouts_header_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     Bottomfooter: _layouts_footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
@@ -3918,732 +3714,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/categories.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/categories.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _layouts_header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layouts/header.vue */ "./resources/js/components/frontendComponents/pages/layouts/header.vue");
-/* harmony import */ var _layouts_footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./layouts/footer.vue */ "./resources/js/components/frontendComponents/pages/layouts/footer.vue");
-/* harmony import */ var vue_paystack__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-paystack */ "./node_modules/vue-paystack/dist/paystack.min.js");
-/* harmony import */ var vue_paystack__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_paystack__WEBPACK_IMPORTED_MODULE_2__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log("Donate mounted.");
-  },
-  components: {
-    topHeader: _layouts_header_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Bottomfooter: _layouts_footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    paystack: vue_paystack__WEBPACK_IMPORTED_MODULE_2___default.a
-  },
-  data: function data() {
-    return {
-      projects: {}
-    };
-  },
-  computed: {
-    reference: function reference() {
-      var text = "";
-      var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-      for (var i = 0; i < 10; i++) {
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-      }
-
-      return text;
-    }
-  },
-  methods: {
-    callback: function callback(response) {
-      console.log(response);
-    },
-    close: function close() {
-      console.log("Payment closed");
-    },
-    loadProjects: function loadProjects() {
-      var _this = this;
-
-      axios.get("/api/sc_admin/projects").then(function (_ref) {
-        var data = _ref.data;
-        return _this.projects = data;
-      });
-    }
-  },
-  created: function created() {
-    this.loadProjects();
-    this.$route.params;
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/checkout.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/checkout.vue?vue&type=script&lang=js& ***!
@@ -5235,6 +4305,170 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _layouts_header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layouts/header.vue */ "./resources/js/components/frontendComponents/pages/layouts/header.vue");
+/* harmony import */ var _layouts_footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./layouts/footer.vue */ "./resources/js/components/frontendComponents/pages/layouts/footer.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {},
+  components: {
+    topHeader: _layouts_header_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Bottomfooter: _layouts_footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/home.vue?vue&type=script&lang=js&":
 /*!****************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/home.vue?vue&type=script&lang=js& ***!
@@ -5503,6 +4737,107 @@ __webpack_require__.r(__webpack_exports__);
     this.loadTopArticle();
     this.loadArticles();
     this.$route.params;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _layouts_header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layouts/header.vue */ "./resources/js/components/frontendComponents/pages/layouts/header.vue");
+/* harmony import */ var _layouts_footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./layouts/footer.vue */ "./resources/js/components/frontendComponents/pages/layouts/footer.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {},
+  components: {
+    topHeader: _layouts_header_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Bottomfooter: _layouts_footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -44596,6 +43931,27 @@ var render = function() {
     [
       _c("topHeader"),
       _vm._v(" "),
+      _c("div", { staticClass: "breadcroumb-area bread-bg" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-lg-12" }, [
+              _c("div", { staticClass: "breadcroumb-title text-center" }, [
+                _c("h1", [_vm._v("About Us")]),
+                _vm._v(" "),
+                _c(
+                  "h6",
+                  [
+                    _c("router-link", { attrs: { to: "/" } }, [_vm._v("Home")]),
+                    _vm._v("/ About Us\n            ")
+                  ],
+                  1
+                )
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
       _vm._m(1),
@@ -44608,8 +43964,6 @@ var render = function() {
       _vm._v(" "),
       _vm._m(5),
       _vm._v(" "),
-      _vm._m(6),
-      _vm._v(" "),
       _c("Bottomfooter")
     ],
     1
@@ -44620,57 +43974,24 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "page-header style-2" }, [
+    return _c("div", { staticClass: "about-area section-padding" }, [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "page-title text-center" }, [
-          _c("h3", [_vm._v("About Our Mezban")]),
-          _vm._v(" "),
-          _c("ul", { staticClass: "breadcrumb" }, [
-            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Home")])]),
-            _vm._v(" "),
-            _c("li", [_vm._v("About")])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "about about-page padding-tb" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row align-items-center" }, [
-          _c("div", { staticClass: "col-lg-6 col-12" }, [
-            _c("div", { staticClass: "about-thumb" }, [
-              _c("img", {
-                attrs: {
-                  src: "/assets/front/images/about/01.png",
-                  alt: "about-food"
-                }
-              })
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6" }, [
+            _c("div", { staticClass: "about-image" }, [
+              _c("img", { attrs: { src: "assets/img/about-us.jpg", alt: "" } })
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-lg-6 col-12" }, [
+          _c("div", { staticClass: "col-lg-5" }, [
             _c("div", { staticClass: "about-content" }, [
-              _c("div", { staticClass: "section-header" }, [
-                _c("span", [_vm._v("Welcome Mezban")]),
-                _vm._v(" "),
-                _c("h3", [_vm._v("About Restaurant History!")])
+              _c("div", { staticClass: "section-title" }, [
+                _c("h6", [_vm._v("A little Bit About Us")])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "section-wrapper" }, [
-                _c("p", [
-                  _vm._v(
-                    "Synergistca conceptualize leveraged inte ectual capital through virtual and the a and Proactiviely initiate lrisk highyield a platforms after realtme froms growth that awesome tently matrix robusti method powerm foistcky Sytical concepta leved ntelectua anding capita hrough virtua nteectua that capta the and Proactiviely initiate low risk highyield platforms after realtme froms that there andin Proctive initate low risk high yeld platform aftering Conven iterate optimal paradigms reliable techno"
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "food-btn style-2", attrs: { href: "#" } },
-                  [_c("span", [_vm._v("get diraction")])]
+              _c("p", [
+                _vm._v(
+                  "SAWI is a Non-Governmental and not for profit organization with specific focus on Sustainable Management of WASTE in Africa. Waste is a global phenomenal which requires scientific approach with effective government policy to be able to efficiently harness its opportunity and avoid its threat. Efficient handling of waste helps in combating global warming, pollution, and improper sanitation, promote healthy living and balanced ecosystem."
                 )
               ])
             ])
@@ -44683,686 +44004,238 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      {
-        staticClass: "popular-chef padding-tb",
-        staticStyle: { "background-color": "#fafeff" }
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "section-header" }, [
-            _c("h3", [_vm._v("Popular HomeChef")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Completely network impactful users whereas next-generation applications engage out thinking via tactical action."
-              )
+    return _c("div", { staticClass: "feature-area" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-3 col-md-6 col-sm-6" }, [
+            _c("div", { staticClass: "single-feature-item" }, [
+              _c("div", { staticClass: "feature-icon" }, [
+                _c("i", { staticClass: "flaticon-donation-1" })
+              ]),
+              _vm._v(" "),
+              _c("h5", [_vm._v("Our Vision")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n              We envisioned SAWI to be the go-to organization\n              for capacity building, data exploration and policy guides\n              for waste management and allied fields in Africa\n            "
+                )
+              ])
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "section-wrapper" }, [
-            _c("div", { staticClass: "row justify-content-center" }, [
-              _c("div", { staticClass: "col-xl-4 col-md-6 col-12" }, [
-                _c("div", { staticClass: "chef-item" }, [
-                  _c("div", { staticClass: "chef-inner" }, [
-                    _c("div", { staticClass: "chef-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/chef/01.jpg",
-                          alt: "food-chef"
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "chef-content" }, [
-                      _c("div", { staticClass: "chef-author" }, [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _c("img", {
-                            attrs: {
-                              src: "/assets/front/images/chef/author/07.jpg",
-                              alt: "chef-author"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("h5", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Sanzida laila Trisha")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [_vm._v("Month Top Homechef")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "scocial-share" }, [
-                        _c(
-                          "a",
-                          { staticClass: "food-btn", attrs: { href: "#" } },
-                          [
-                            _c("span", [
-                              _c("i", { staticClass: "icofont-ui-user" }),
-                              _vm._v(" follow\n                      ")
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "chef-footer" }, [
-                        _c("div", { staticClass: "chef-earn chef-con" }, [
-                          _c("h6", [_vm._v("$290.00")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#" } }, [_vm._v("Earned")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "chef-menu chef-con" }, [
-                          _c("h6", [_vm._v("96")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Food Menu")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "chef-recipe chef-con" }, [
-                          _c("h6", [_vm._v("33")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#" } }, [_vm._v("Recipe")])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
+          _c("div", { staticClass: "col-lg-3 col-md-6 col-sm-6" }, [
+            _c("div", { staticClass: "single-feature-item" }, [
+              _c("div", { staticClass: "feature-icon" }, [
+                _c("i", { staticClass: "flaticon-charity" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-xl-4 col-md-6 col-12" }, [
-                _c("div", { staticClass: "chef-item" }, [
-                  _c("div", { staticClass: "chef-inner" }, [
-                    _c("div", { staticClass: "chef-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/chef/02.jpg",
-                          alt: "food-chef"
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "chef-content" }, [
-                      _c("div", { staticClass: "chef-author" }, [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _c("img", {
-                            attrs: {
-                              src: "/assets/front/images/chef/author/08.jpg",
-                              alt: "chef-author"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("h5", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Jinnat Raihun Sumi")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [_vm._v("Month Top Homechef")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "scocial-share" }, [
-                        _c(
-                          "a",
-                          { staticClass: "food-btn", attrs: { href: "#" } },
-                          [
-                            _c("span", [
-                              _c("i", { staticClass: "icofont-ui-user" }),
-                              _vm._v(" follow\n                      ")
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "chef-footer" }, [
-                        _c("div", { staticClass: "chef-earn chef-con" }, [
-                          _c("h6", [_vm._v("$290.00")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#" } }, [_vm._v("Earned")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "chef-menu chef-con" }, [
-                          _c("h6", [_vm._v("96")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Food Menu")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "chef-recipe chef-con" }, [
-                          _c("h6", [_vm._v("33")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#" } }, [_vm._v("Recipe")])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
+              _c("h5", [_vm._v("Our Objectives")]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-xl-4 col-md-6 col-12" }, [
-                _c("div", { staticClass: "chef-item" }, [
-                  _c("div", { staticClass: "chef-inner" }, [
-                    _c("div", { staticClass: "chef-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/chef/03.jpg",
-                          alt: "food-chef"
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "chef-content" }, [
-                      _c("div", { staticClass: "chef-author" }, [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _c("img", {
-                            attrs: {
-                              src: "/assets/front/images/chef/author/09.jpg",
-                              alt: "chef-author"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("h5", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Shahana Anam Khan")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [_vm._v("Month Top Homechef")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "scocial-share" }, [
-                        _c(
-                          "a",
-                          { staticClass: "food-btn", attrs: { href: "#" } },
-                          [
-                            _c("span", [
-                              _c("i", { staticClass: "icofont-ui-user" }),
-                              _vm._v(" follow\n                      ")
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "chef-footer" }, [
-                        _c("div", { staticClass: "chef-earn chef-con" }, [
-                          _c("h6", [_vm._v("$290.00")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#" } }, [_vm._v("Earned")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "chef-menu chef-con" }, [
-                          _c("h6", [_vm._v("96")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Food Menu")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "chef-recipe chef-con" }, [
-                          _c("h6", [_vm._v("33")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#" } }, [_vm._v("Recipe")])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
+              _c("p", [
+                _vm._v(
+                  "\n              Develop capacity for Municipal Waste Management\n              in Nigeria through regular Environmental\n              Education and Awareness Programs\n            "
+                )
               ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
+            _c("div", { staticClass: "about-image" }, [
+              _c("img", { attrs: { src: "assets/img/about-us.jpg", alt: "" } })
             ])
           ])
         ])
-      ]
-    )
+      ])
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "booking-table padding-tb" }, [
-      _c("div", { staticClass: "shape-1" }, [
-        _c("img", {
-          attrs: {
-            src: "/assets/front/images/banner/shape/02.png",
-            alt: "banner"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "shape-2" }, [
-        _c("img", {
-          attrs: {
-            src: "/assets/front/images/banner/shape/02.png",
-            alt: "banner"
-          }
-        })
-      ]),
-      _vm._v(" "),
+    return _c("div", { staticClass: "about-area section-padding" }, [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "section-header" }, [
-          _c("h3", [_vm._v("Book a Online Table")]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6" }, [
+            _c("div", { staticClass: "about-image" }, [
+              _c("img", { attrs: { src: "assets/img/about-us.jpg", alt: "" } })
+            ])
+          ]),
           _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Completely network impactful users whereas next-generation applications engage out thinking via tactical action."
-            )
+          _c("div", { staticClass: "col-lg-5" }, [
+            _c("div", { staticClass: "about-content" }, [
+              _c("div", { staticClass: "section-title" }, [
+                _c("h6", [_vm._v("A little Bit About Us")])
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "The challenges of managing both the threat and opportunity posed by human waste have become a daunting one on the continent of Africa. Most Africa countries have close to no strategy, policy, political will to combat the menace and its far-reaching effects. Unfortunately, the larger percentage of the population in Africa suffers the adverse effect of the poor management of waste, with women and children being the most affected. Most dumpsites are located in a densely populated rural areas or slum where majority are living in abject poverty. Arbitrary dumpsites are also common sight on road kerbs and corners even in the urban areas where the local authorities have been practically overwhelmed by the challenges of Municipal Solid Waste, E-waste and hazardous waste like medical and chemical wastes."
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "about-area section-padding" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6" }, [
+            _c("p", [
+              _vm._v(
+                "Certainly, there must be a deliberate systematic and sustainable approach which is scientific and technical in nature to curtail the negative effects of uncontrolled waste dump in Africa. This approach must be all inclusive to guarantee sustainability. Without this, achieving United Nations Sustainable Development Goals in Africa by 2030 may be a mere wish. Especially on"
+              )
+            ]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "about_list" }, [
+              _c("li", [_vm._v("Goal 6 – Clean water and Sanitation")]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v("Goal 9 – Industry Innovation and Infrastructure")
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v("Goal 11 – Sustainable cities and communities")
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v("Goal 12 – Responsible Consumption and Production")
+              ]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Goal 13 – Climate Action")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Goal 14 – Life under water")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Goal 15 – Life on land.")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Goal 17 – Partnership for the Goals")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-6" }, [
+            _c("div", { staticClass: "section-title" }, [
+              _c("h2", [
+                _vm._v("\n              Our\n              "),
+                _c("b", [_vm._v("Objectives")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "about_list" }, [
+              _c("li", [
+                _vm._v(
+                  "Develop capacity for Municipal Waste Management in Nigeria through regular Environmental Education and Awareness Programs"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "Analyze and encourage internalization of government policies on environment with specific focus on Waste Management in countries of Africa."
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "Develop, Collate, Analyze and manage Waste data for Industrial Development and policy management"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "Drive and encourage new approach to Waste Management in Nigeria and Africa through regular engagement with regulators, operators and generators."
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "Partnership for promotion of United Nations Sustainable Development Goals 6, 11, 12,13,14,15 and 17."
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "Environmental Advocacy, Awareness and Sensitization to communities, corporate entities, government and individuals for sustainability."
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "Encourage and drive the birth of viable waste industry in Nigeria and Africa."
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "Promote sustainable alternative energy use through waste conversion."
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "program-area gray-bg section-padding" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12 text-center" }, [
+            _c("div", { staticClass: "section-title" }, [
+              _c("h2", [
+                _vm._v("\n              Our\n              "),
+                _c("b", [_vm._v("Approach")])
+              ])
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "section-wrapper" }, [
-          _c(
-            "div",
-            { staticClass: "row justify-content-center align-items-center" },
-            [
-              _c("div", { staticClass: "col-lg-6 col-12" }, [
-                _c("div", { staticClass: "bg-table" })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-6 col-12" }, [
-                _c("div", { staticClass: "contact-form" }, [
-                  _c(
-                    "form",
-                    { attrs: { action: "https://www.foxcoders.com/" } },
-                    [
-                      _c("input", {
-                        attrs: {
-                          type: "text",
-                          name: "name",
-                          placeholder: "Full Name*"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("input", {
-                        attrs: {
-                          type: "email",
-                          name: "email",
-                          placeholder: "Your Eamil*"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("input", {
-                        attrs: {
-                          type: "text",
-                          name: "number",
-                          placeholder: "Phone Number"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "res-tab time-zone" }, [
-                        _c("select", [
-                          _c("option", { attrs: { value: "1" } }, [
-                            _vm._v("Enter Time")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "2" } }, [
-                            _vm._v("10:00 AM")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "3" } }, [
-                            _vm._v("11:00 AM")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "4" } }, [
-                            _vm._v("12:00 PM")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "5" } }, [
-                            _vm._v("01:00 PM")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "6" } }, [
-                            _vm._v("02:00 PM")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "7" } }, [
-                            _vm._v("03:00 PM")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "8" } }, [
-                            _vm._v("04:00 PM")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "9" } }, [
-                            _vm._v("05:00 PM")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "res-tab table-zone" }, [
-                        _c("select", [
-                          _c("option", { attrs: { value: "1" } }, [
-                            _vm._v("Table Size")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "2" } }, [
-                            _vm._v("2F - 3F")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "3" } }, [
-                            _vm._v("2.5F - 3.5F")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "4" } }, [
-                            _vm._v("3F - 4F")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "5" } }, [
-                            _vm._v("3.5F - 4.5F")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "6" } }, [
-                            _vm._v("4F - 5F")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "7" } }, [
-                            _vm._v("4.5F - 5.5F")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "8" } }, [
-                            _vm._v("5F - 6F")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "9" } }, [
-                            _vm._v("5.5F - 6.5F")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("input", {
-                        attrs: {
-                          type: "date",
-                          name: "time",
-                          "data-provide": "datepicker"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("textarea", {
-                        attrs: {
-                          name: "message",
-                          rows: "6",
-                          placeholder: "Message"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "food-btn style-2",
-                          attrs: { type: "submit" }
-                        },
-                        [_c("span", [_vm._v("book a table")])]
-                      )
-                    ]
+        _c("div", { staticClass: "program-list" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-lg-4 col-md-6 col-sm-12" }, [
+              _c("div", { staticClass: "single-program-item green-bg" }, [
+                _c("i", { staticClass: "flaticon-food-donation" }),
+                _vm._v(" "),
+                _c("h5", [_vm._v("Engagement")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "We shall engage with all relevant stake holders across communities and boundaries to spread the gospel of environmental sustainability, sustainable and socio-economic driven waste process management and so on. We will engage with governments, businesses, individuals and development partners for convergence of purpose and forging alliance to create a better world for now and future generations."
                   )
                 ])
               ])
-            ]
-          )
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      {
-        staticClass: "testimonial padding-tb",
-        staticStyle: {
-          "background-image": "url(/assets/front/css/bg-image/category-bg.jpg)",
-          "background-size": "cover"
-        }
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "section-wrapper" }, [
-            _c("div", { staticClass: "quete-thumb" }, [
-              _c("img", {
-                attrs: {
-                  src: "/assets/front/images/testimonial/icon/01.jpg",
-                  alt: "food-quete"
-                }
-              })
             ]),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "carousel slide vert", attrs: { id: "demo" } },
-              [
-                _c("div", { staticClass: "carousel-inner" }, [
-                  _c("div", { staticClass: "carousel-item active" }, [
-                    _c("div", { staticClass: "testi-item" }, [
-                      _c("p", [
-                        _vm._v(
-                          "Extend Accurate Services Long Term High Impact Experiences Interactiv Streamline Team Compelingly Simplify Solutions Before Technicaly Sound Leadership Skills Creative Holstic Process Improvements Proactively Streamline Alternative Niche Markets Forwor Resource Conveniently cultivate pandemic technology and corporate."
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("h6", [
-                        _vm._v(
-                          "\n                  Somrat Islam\n                  "
-                        ),
-                        _c("span", [_vm._v("(UI Designer)")])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "rating" }, [
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" })
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "carousel-item" }, [
-                    _c("div", { staticClass: "testi-item" }, [
-                      _c("p", [
-                        _vm._v(
-                          "Extend Accurate Services Long Term High Impact Experiences Interactiv Streamline Team Compelingly Simplify Solutions Before Technicaly Sound Leadership Skills Creative Holstic Process Improvements Proactively Streamline Alternative Niche Markets Forwor Resource Conveniently cultivate pandemic technology and corporate."
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("h6", [
-                        _vm._v(
-                          "\n                  Somrat Islam\n                  "
-                        ),
-                        _c("span", [_vm._v("(UI Designer)")])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "rating" }, [
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" })
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "carousel-item" }, [
-                    _c("div", { staticClass: "testi-item" }, [
-                      _c("p", [
-                        _vm._v(
-                          "Extend Accurate Services Long Term High Impact Experiences Interactiv Streamline Team Compelingly Simplify Solutions Before Technicaly Sound Leadership Skills Creative Holstic Process Improvements Proactively Streamline Alternative Niche Markets Forwor Resource Conveniently cultivate pandemic technology and corporate."
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("h6", [
-                        _vm._v(
-                          "\n                  Somrat Islam\n                  "
-                        ),
-                        _c("span", [_vm._v("(UI Designer)")])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "rating" }, [
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "icofont-star" })
-                      ])
-                    ])
-                  ])
-                ]),
+            _c("div", { staticClass: "col-lg-4 col-md-6 col-sm-12" }, [
+              _c("div", { staticClass: "single-program-item yellow-bg" }, [
+                _c("i", { staticClass: "flaticon-organization" }),
                 _vm._v(" "),
-                _c("div", { staticClass: "carousel-indicators" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "item active",
-                      attrs: { "data-target": "#demo", "data-slide-to": "0" }
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/testimonial/01.jpg",
-                          alt: ""
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "item",
-                      attrs: { "data-target": "#demo", "data-slide-to": "1" }
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/testimonial/02.jpg",
-                          alt: ""
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "item",
-                      attrs: { "data-target": "#demo", "data-slide-to": "2" }
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/testimonial/03.jpg",
-                          alt: ""
-                        }
-                      })
-                    ]
+                _c("h5", [_vm._v("Education")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "We shall embark on continuous creation of awareness through various educative programs and activities. Organize continuous capacity development training for waste managers/handlers on train the trainer scheme. Rural and urban awareness campaign for environmental awareness, collaborate with development partners and other agencies to entrench environmental education in primary school curriculum."
                   )
                 ])
-              ]
-            )
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "sponsor-section" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "section-wrapper" }, [
-          _c("div", { staticClass: "sponsor-slider" }, [
-            _c("div", { staticClass: "swiper-wrapper" }, [
-              _c("div", { staticClass: "swiper-slide" }, [
-                _c("div", { staticClass: "sponsor-item" }, [
-                  _c("div", { staticClass: "sponsor-thumb" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/sponsor/01.png",
-                          alt: "food-sopnsor"
-                        }
-                      })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "swiper-slide" }, [
-                _c("div", { staticClass: "sponsor-item" }, [
-                  _c("div", { staticClass: "sponsor-thumb" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/sponsor/02.png",
-                          alt: "food-sopnsor"
-                        }
-                      })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "swiper-slide" }, [
-                _c("div", { staticClass: "sponsor-item" }, [
-                  _c("div", { staticClass: "sponsor-thumb" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/sponsor/03.png",
-                          alt: "food-sopnsor"
-                        }
-                      })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "swiper-slide" }, [
-                _c("div", { staticClass: "sponsor-item" }, [
-                  _c("div", { staticClass: "sponsor-thumb" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/sponsor/04.png",
-                          alt: "food-sopnsor"
-                        }
-                      })
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "swiper-slide" }, [
-                _c("div", { staticClass: "sponsor-item" }, [
-                  _c("div", { staticClass: "sponsor-thumb" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/sponsor/05.png",
-                          alt: "food-sopnsor"
-                        }
-                      })
-                    ])
-                  ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-4 col-md-6 col-sm-12" }, [
+              _c("div", { staticClass: "single-program-item" }, [
+                _c("i", { staticClass: "flaticon-donation" }),
+                _vm._v(" "),
+                _c("h5", [_vm._v("Exploration")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Research and development studies, data gathering, analysis and management for industrial development."
+                  )
                 ])
               ])
             ])
@@ -45375,32 +44248,20 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "news-letter" }, [
+    return _c("div", { staticClass: "cta-area" }, [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "section-wrapper" }, [
-          _c("div", { staticClass: "news-title" }, [
-            _c("h3", [_vm._v("For Newsletter")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "news-form" }, [
-            _c("form", { attrs: { action: "https://www.foxcoders.com/" } }, [
-              _c("label", [
-                _c("input", {
-                  attrs: {
-                    type: "email",
-                    name: "email",
-                    placeholder: "Enter Your Email"
-                  }
-                })
-              ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12 text-center" }, [
+            _c("h2", [
+              _vm._v("\n            A very small\n            "),
+              _c("b", [_vm._v("donation")]),
               _vm._v(" "),
-              _c("input", {
-                attrs: {
-                  type: "submit",
-                  name: "submit",
-                  value: "Subscribe now"
-                }
-              })
+              _c("br"),
+              _vm._v("can save the world\n          ")
+            ]),
+            _vm._v(" "),
+            _c("a", { staticClass: "main-btn", attrs: { href: "#" } }, [
+              _vm._v("Become a Donor")
             ])
           ])
         ])
@@ -47376,1206 +46237,6 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/categories.vue?vue&type=template&id=5a3e16b3&":
-/*!**************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/categories.vue?vue&type=template&id=5a3e16b3& ***!
-  \**************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("topHeader"),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _c("Bottomfooter")
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "page-header style-2" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "page-title text-center" }, [
-          _c("h3", [_vm._v("Mnu Page Style")]),
-          _vm._v(" "),
-          _c("ul", { staticClass: "breadcrumb" }, [
-            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Home")])]),
-            _vm._v(" "),
-            _c("li", [_vm._v("Menu")])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      { staticClass: "product style-2 bg-body padding-tb" },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "section-header" }, [
-            _c("h3", [_vm._v("Our Tasty Menu Today")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Completely network impactful users whereas next-generation applications engage out thinking via tactical action."
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "section-wrapper" }, [
-            _c("ul", { staticClass: "tab-bar" }, [
-              _c(
-                "li",
-                {
-                  staticClass: "tablinks",
-                  attrs: {
-                    id: "defaultOpen",
-                    onclick: "openCity(event, 'burger')"
-                  }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/assets/front/images/product/icon/01.png",
-                      alt: "food-product"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Burger Menu")])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass: "tablinks",
-                  attrs: { onclick: "openCity(event, 'pizza')" }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/assets/front/images/product/icon/02.png",
-                      alt: "food-product"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("fizza menu")])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass: "tablinks",
-                  attrs: { onclick: "openCity(event, 'snaks')" }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/assets/front/images/product/icon/03.png",
-                      alt: "food-product"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("snaks Menu")])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass: "tablinks",
-                  attrs: { onclick: "openCity(event, 'drinks')" }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/assets/front/images/product/icon/04.png",
-                      alt: "food-product"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("drinks Menu")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tabcontent", attrs: { id: "burger" } }, [
-              _c("div", { staticClass: "row no-gutters" }, [
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/01.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/02.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/03.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/04.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/04.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/03.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/02.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/01.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tabcontent", attrs: { id: "pizza" } }, [
-              _c("div", { staticClass: "row no-gutters" }, [
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/04.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/03.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/02.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/01.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tabcontent", attrs: { id: "snaks" } }, [
-              _c("div", { staticClass: "row no-gutters" }, [
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/01.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/02.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/03.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/04.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/04.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/03.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tabcontent", attrs: { id: "drinks" } }, [
-              _c("div", { staticClass: "row no-gutters" }, [
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/04.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/03.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/02.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6 col-12" }, [
-                  _c("div", { staticClass: "product-item style-2" }, [
-                    _c("div", { staticClass: "product-thumb" }, [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/front/images/product/01.jpg",
-                          alt: "food-product"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price" }, [_vm._v("$20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "product-content" }, [
-                      _c("div", { staticClass: "product-title" }, [
-                        _c("h6", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Cream Chicken Chiladas")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "rating" }, [
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" }),
-                          _vm._v(" "),
-                          _c("i", { staticClass: "icofont-star" })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "product-desc" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Conveniently imaiipact are worldwide andng datang arovem theme with there"
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "news-letter" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "section-wrapper" }, [
-          _c("div", { staticClass: "news-title" }, [
-            _c("h3", [_vm._v("For Newsletter")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "news-form" }, [
-            _c("form", { attrs: { action: "https://www.foxcoders.com/" } }, [
-              _c("label", [
-                _c("input", {
-                  attrs: {
-                    type: "email",
-                    name: "email",
-                    placeholder: "Enter Your Email"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                attrs: {
-                  type: "submit",
-                  name: "submit",
-                  value: "Subscribe now"
-                }
-              })
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/checkout.vue?vue&type=template&id=e03126c6&":
 /*!************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/checkout.vue?vue&type=template&id=e03126c6& ***!
@@ -49362,6 +47023,260 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=template&id=0e0b3d4b&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=template&id=0e0b3d4b& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "about__holder" },
+    [
+      _c("topHeader"),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _c("Bottomfooter")
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "breadcroumb-area bread-bg" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12" }, [
+            _c("div", { staticClass: "breadcroumb-title text-center" }, [
+              _c("h1", [_vm._v("Gallery")]),
+              _vm._v(" "),
+              _c("h6", [
+                _c("a", { attrs: { to: "/" } }, [_vm._v("Home")]),
+                _vm._v(" / Gallery\n            ")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "portfolio-area section-padding" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12" }, [
+            _c("div", { staticClass: "section-title" }, [
+              _c("h6", [_vm._v("Our Great Work")]),
+              _vm._v(" "),
+              _c("h2", [
+                _vm._v("\n              We do\n              "),
+                _c("b", [_vm._v("social")]),
+                _vm._v(" work\n              "),
+                _c("br"),
+                _vm._v("for helpless\n            ")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12" }, [
+            _c("div", { staticClass: "portfolio-list" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "single-portfolio-item large design illustration",
+                  staticStyle: {
+                    "background-image": "url(assets/front/img/IMG_4922.jpg)"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "details" }, [
+                    _c("div", { staticClass: "info" }, [
+                      _c("h5", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Social Worker")
+                        ])
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "single-portfolio-item port-bg-2 illustration brand"
+                },
+                [
+                  _c("div", { staticClass: "details" }, [
+                    _c("div", { staticClass: "info" }, [
+                      _c("h5", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Fair Education")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "assets/img/port-bg-1.jpg" } }, [
+                        _c("i", { staticClass: "las la-search-plus" })
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "single-portfolio-item port-bg-3 design print" },
+                [
+                  _c("div", { staticClass: "details" }, [
+                    _c("div", { staticClass: "info" }, [
+                      _c("h5", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Health Program")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "assets/img/port-bg-3.jpg" } }, [
+                        _c("i", { staticClass: "las la-search-plus" })
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "single-portfolio-item wide port-bg-4 illustration print brand"
+                },
+                [
+                  _c("div", { staticClass: "details" }, [
+                    _c("div", { staticClass: "info" }, [
+                      _c("h5", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Pure Water")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "assets/img/port-bg-4.jpg" } }, [
+                        _c("i", { staticClass: "las la-search-plus" })
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "single-portfolio-item wide port-bg-5 design brand"
+                },
+                [
+                  _c("div", { staticClass: "details" }, [
+                    _c("div", { staticClass: "info" }, [
+                      _c("h5", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Hungry Child")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "assets/img/port-bg-5.jpg" } }, [
+                        _c("i", { staticClass: "las la-search-plus" })
+                      ])
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "single-portfolio-item port-bg-6 print" },
+                [
+                  _c("div", { staticClass: "details" }, [
+                    _c("div", { staticClass: "info" }, [
+                      _c("h5", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Nutrition Facts")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "assets/img/port-bg-6.jpg" } }, [
+                        _c("i", { staticClass: "las la-search-plus" })
+                      ])
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "cta-area theme-2" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6 col-md-7 text-center" }, [
+            _c("h2", [
+              _vm._v("\n            Lets make the world\n            "),
+              _c("br"),
+              _vm._v("better\n            "),
+              _c("b", [_vm._v("together")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-lg-6 col-md-5 wow fadeInUp animated",
+              attrs: { "data-wow-delay": ".3s" }
+            },
+            [
+              _c("a", { staticClass: "main-btn", attrs: { href: "#" } }, [
+                _vm._v("Become a Donor")
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/home.vue?vue&type=template&id=088d5194&":
 /*!********************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/home.vue?vue&type=template&id=088d5194& ***!
@@ -49625,6 +47540,176 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=template&id=afcf10e0&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=template&id=afcf10e0& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "about__holder" },
+    [
+      _c("topHeader"),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _c("Bottomfooter")
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "breadcroumb-area bread-bg" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12" }, [
+            _c("div", { staticClass: "breadcroumb-title text-center" }, [
+              _c("h1", [_vm._v("Infographics")]),
+              _vm._v(" "),
+              _c("h6", [
+                _c("a", { attrs: { to: "/" } }, [_vm._v("Home")]),
+                _vm._v(" / Infographics\n            ")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "faq-section section-padding" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-8" }, [
+            _c("div", { staticClass: "section-title" }, [
+              _c("h6", [_vm._v("source: UNEP")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "styled-faq" }, [
+              _c("img", {
+                attrs: {
+                  src: "assets/front/img/PLASTIC_infographic_en.jpg",
+                  alt: ""
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-4" }, [
+            _c("div", { staticClass: "question-section" }, [
+              _c("h6", [_vm._v("Have any Question?")]),
+              _vm._v(" "),
+              _c(
+                "form",
+                {
+                  attrs: {
+                    action:
+                      "https://capricorn-theme.net/html/charry/sendemail.php"
+                  }
+                },
+                [
+                  _c("input", {
+                    attrs: {
+                      type: "text",
+                      name: "name",
+                      id: "name",
+                      required: "",
+                      placeholder: "Full Name"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("input", {
+                    attrs: {
+                      type: "email",
+                      name: "email",
+                      id: "email",
+                      required: "",
+                      placeholder: "Your E-mail"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("textarea", {
+                    attrs: {
+                      name: "message",
+                      id: "message",
+                      cols: "30",
+                      rows: "10",
+                      required: "",
+                      placeholder: "How can help you?"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("button", { attrs: { type: "submit", name: "submit" } }, [
+                    _vm._v("Your Question")
+                  ])
+                ]
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "cta-area theme-2" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6 col-md-7 text-center" }, [
+            _c("h2", [
+              _vm._v("\n            Lets make the world\n            "),
+              _c("br"),
+              _vm._v("better\n            "),
+              _c("b", [_vm._v("together")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-lg-6 col-md-5 wow fadeInUp animated",
+              attrs: { "data-wow-delay": ".3s" }
+            },
+            [
+              _c("a", { staticClass: "main-btn", attrs: { href: "#" } }, [
+                _vm._v("Become a Donor")
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/layouts/footer.vue?vue&type=template&id=27598310&":
 /*!******************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/frontendComponents/pages/layouts/footer.vue?vue&type=template&id=27598310& ***!
@@ -49781,200 +47866,243 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "header___sk_shop" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "header-area absolate-header theme-3" }, [
+      _c("div", { staticClass: "sticky-area" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "navigation" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-8" }, [
+                _c("div", { staticClass: "main-menu" }, [
+                  _c("nav", { staticClass: "navbar navbar-expand-lg" }, [
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "collapse navbar-collapse justify-content-center",
+                        attrs: { id: "navbarSupportedContent" }
+                      },
+                      [
+                        _c("ul", { staticClass: "navbar-nav m-auto" }, [
+                          _c(
+                            "li",
+                            { staticClass: "nav-item active" },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "nav-link active",
+                                  attrs: { to: "/" }
+                                },
+                                [_vm._v("Home")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            { staticClass: "nav-item" },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { index: "0", to: "/about-us" }
+                                },
+                                [_vm._v("About us +")]
+                              ),
+                              _vm._v(" "),
+                              _c("ul", { staticClass: "sub-menu" }, [
+                                _vm._m(3),
+                                _vm._v(" "),
+                                _c(
+                                  "li",
+                                  [
+                                    _c(
+                                      "router-link",
+                                      { attrs: { to: "/infographics" } },
+                                      [_vm._v("Infographics")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            { staticClass: "nav-item" },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { to: "gallery" }
+                                },
+                                [_vm._v("Gallery")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _vm._m(4),
+                          _vm._v(" "),
+                          _vm._m(5),
+                          _vm._v(" "),
+                          _vm._m(6)
+                        ])
+                      ]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _vm._m(7)
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header___sk_shop" }, [
-      _c("div", { staticClass: "header-top-area absolate-header" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-lg-6 col-md-12 col-sm-12" }, [
-              _c("ul", [
-                _c("li", [
-                  _c("a", { attrs: { href: "tel://+2348117088281" } }, [
-                    _c("i", { staticClass: "fa fa-map-marker" }),
-                    _vm._v(
-                      " Call us\n                +234 811 708 8281.\n              "
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "mailto:info@sawi-env.org" } }, [
-                    _c("i", { staticClass: "fa fa-envelope" }),
-                    _vm._v(
-                      "\n                info@sawi-env.org\n              "
-                    )
-                  ])
+    return _c("div", { staticClass: "header-top-area absolate-header" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6 col-md-12 col-sm-12" }, [
+            _c("ul", [
+              _c("li", [
+                _c("a", { attrs: { href: "tel://+2348117088281" } }, [
+                  _c("i", { staticClass: "fa fa-map-marker" }),
+                  _vm._v(
+                    " Call us\n                +234 811 708 8281.\n              "
+                  )
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-6 col-md-12 col-sm-12 text-right" },
-              [
-                _c("div", { staticClass: "social-icon" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "lab la-facebook-f" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "lab la-twitter" })
-                  ])
-                ])
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "header-area absolate-header theme-3" }, [
-        _c("div", { staticClass: "sticky-area" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "navigation" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-lg-2" }, [
-                  _c("div", { staticClass: "logo" }, [
-                    _c(
-                      "a",
-                      { staticClass: "navbar-brand", attrs: { href: "#" } },
-                      [
-                        _c("img", {
-                          attrs: {
-                            src: "public/assets/front/img/main-logo.png",
-                            alt: ""
-                          }
-                        })
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-8" }, [
-                  _c("div", { staticClass: "main-menu" }, [
-                    _c("nav", { staticClass: "navbar navbar-expand-lg" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "navbar-toggler",
-                          attrs: {
-                            type: "button",
-                            "data-toggle": "collapse",
-                            "data-target": "#navbarSupportedContent",
-                            "aria-controls": "navbarSupportedContent",
-                            "aria-expanded": "false",
-                            "aria-label": "Toggle navigation"
-                          }
-                        },
-                        [
-                          _c("span", { staticClass: "navbar-toggler-icon" }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "navbar-toggler-icon" }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "navbar-toggler-icon" })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "collapse navbar-collapse justify-content-center",
-                          attrs: { id: "navbarSupportedContent" }
-                        },
-                        [
-                          _c("ul", { staticClass: "navbar-nav m-auto" }, [
-                            _c("li", { staticClass: "nav-item active" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "nav-link active",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Home")]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("About us +")]
-                              ),
-                              _vm._v(" "),
-                              _c("ul", { staticClass: "sub-menu" }, [
-                                _c("li", [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("News/Media")
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Infographics")
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c("a", { staticClass: "nav-link" }, [
-                                _vm._v("Gallery")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c("a", { staticClass: "nav-link" }, [
-                                _vm._v("Events")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Volunteer")]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Contact")]
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-2 text-right" }, [
-                  _c("div", { staticClass: "header-right-content" }, [
-                    _c("a", { staticClass: "main-btn", attrs: { href: "#" } }, [
-                      _vm._v("Donate Now")
-                    ])
-                  ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "mailto:info@sawi-env.org" } }, [
+                  _c("i", { staticClass: "fa fa-envelope" }),
+                  _vm._v("\n                info@sawi-env.org\n              ")
                 ])
               ])
             ])
-          ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-6 col-md-12 col-sm-12 text-right" },
+            [
+              _c("div", { staticClass: "social-icon" }, [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "lab la-facebook-f" })
+                ]),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "lab la-twitter" })
+                ])
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-2" }, [
+      _c("div", { staticClass: "logo" }, [
+        _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "public/assets/front/img/main-logo.png", alt: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "navbar-toggler",
+        attrs: {
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#navbarSupportedContent",
+          "aria-controls": "navbarSupportedContent",
+          "aria-expanded": "false",
+          "aria-label": "Toggle navigation"
+        }
+      },
+      [
+        _c("span", { staticClass: "navbar-toggler-icon" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "navbar-toggler-icon" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "navbar-toggler-icon" })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("News/Media")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link" }, [_vm._v("Events")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+        _vm._v("Volunteer")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+        _vm._v("Contact")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-2 text-right" }, [
+      _c("div", { staticClass: "header-right-content" }, [
+        _c("a", { staticClass: "main-btn", attrs: { href: "#" } }, [
+          _vm._v("Donate Now")
         ])
       ])
     ])
@@ -67932,75 +66060,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/frontendComponents/pages/categories.vue":
-/*!*************************************************************************!*\
-  !*** ./resources/js/components/frontendComponents/pages/categories.vue ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _categories_vue_vue_type_template_id_5a3e16b3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./categories.vue?vue&type=template&id=5a3e16b3& */ "./resources/js/components/frontendComponents/pages/categories.vue?vue&type=template&id=5a3e16b3&");
-/* harmony import */ var _categories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./categories.vue?vue&type=script&lang=js& */ "./resources/js/components/frontendComponents/pages/categories.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _categories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _categories_vue_vue_type_template_id_5a3e16b3___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _categories_vue_vue_type_template_id_5a3e16b3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/frontendComponents/pages/categories.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/frontendComponents/pages/categories.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************!*\
-  !*** ./resources/js/components/frontendComponents/pages/categories.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_categories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./categories.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/categories.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_categories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/frontendComponents/pages/categories.vue?vue&type=template&id=5a3e16b3&":
-/*!********************************************************************************************************!*\
-  !*** ./resources/js/components/frontendComponents/pages/categories.vue?vue&type=template&id=5a3e16b3& ***!
-  \********************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_categories_vue_vue_type_template_id_5a3e16b3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./categories.vue?vue&type=template&id=5a3e16b3& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/categories.vue?vue&type=template&id=5a3e16b3&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_categories_vue_vue_type_template_id_5a3e16b3___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_categories_vue_vue_type_template_id_5a3e16b3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
 /***/ "./resources/js/components/frontendComponents/pages/checkout.vue":
 /*!***********************************************************************!*\
   !*** ./resources/js/components/frontendComponents/pages/checkout.vue ***!
@@ -68277,6 +66336,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/frontendComponents/pages/gallery.vue":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/frontendComponents/pages/gallery.vue ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _gallery_vue_vue_type_template_id_0e0b3d4b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gallery.vue?vue&type=template&id=0e0b3d4b& */ "./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=template&id=0e0b3d4b&");
+/* harmony import */ var _gallery_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gallery.vue?vue&type=script&lang=js& */ "./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _gallery_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _gallery_vue_vue_type_template_id_0e0b3d4b___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _gallery_vue_vue_type_template_id_0e0b3d4b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/frontendComponents/pages/gallery.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_gallery_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./gallery.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_gallery_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=template&id=0e0b3d4b&":
+/*!*****************************************************************************************************!*\
+  !*** ./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=template&id=0e0b3d4b& ***!
+  \*****************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_gallery_vue_vue_type_template_id_0e0b3d4b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./gallery.vue?vue&type=template&id=0e0b3d4b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/gallery.vue?vue&type=template&id=0e0b3d4b&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_gallery_vue_vue_type_template_id_0e0b3d4b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_gallery_vue_vue_type_template_id_0e0b3d4b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/frontendComponents/pages/home.vue":
 /*!*******************************************************************!*\
   !*** ./resources/js/components/frontendComponents/pages/home.vue ***!
@@ -68341,6 +66469,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_home_vue_vue_type_template_id_088d5194___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_home_vue_vue_type_template_id_088d5194___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/frontendComponents/pages/infographics.vue":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/frontendComponents/pages/infographics.vue ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _infographics_vue_vue_type_template_id_afcf10e0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./infographics.vue?vue&type=template&id=afcf10e0& */ "./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=template&id=afcf10e0&");
+/* harmony import */ var _infographics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./infographics.vue?vue&type=script&lang=js& */ "./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _infographics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _infographics_vue_vue_type_template_id_afcf10e0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _infographics_vue_vue_type_template_id_afcf10e0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/frontendComponents/pages/infographics.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_infographics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./infographics.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_infographics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=template&id=afcf10e0&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=template&id=afcf10e0& ***!
+  \**********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_infographics_vue_vue_type_template_id_afcf10e0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./infographics.vue?vue&type=template&id=afcf10e0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/frontendComponents/pages/infographics.vue?vue&type=template&id=afcf10e0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_infographics_vue_vue_type_template_id_afcf10e0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_infographics_vue_vue_type_template_id_afcf10e0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -68899,11 +67096,14 @@ var routes = [{
   path: "/contact",
   component: __webpack_require__(/*! ./components/frontendComponents/pages/contact.vue */ "./resources/js/components/frontendComponents/pages/contact.vue")["default"]
 }, {
-  path: "/categories",
-  component: __webpack_require__(/*! ./components/frontendComponents/pages/categories.vue */ "./resources/js/components/frontendComponents/pages/categories.vue")["default"]
+  path: "/gallery",
+  component: __webpack_require__(/*! ./components/frontendComponents/pages/gallery.vue */ "./resources/js/components/frontendComponents/pages/gallery.vue")["default"]
 }, {
   path: "/about-us",
   component: __webpack_require__(/*! ./components/frontendComponents/pages/about_us.vue */ "./resources/js/components/frontendComponents/pages/about_us.vue")["default"]
+}, {
+  path: "/infographics",
+  component: __webpack_require__(/*! ./components/frontendComponents/pages/infographics.vue */ "./resources/js/components/frontendComponents/pages/infographics.vue")["default"]
 }, // {
 //     path: "/prime_login",
 //     name: "login",

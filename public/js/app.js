@@ -87857,200 +87857,243 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "header___sk_shop" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "header-area absolate-header theme-3" }, [
+      _c("div", { staticClass: "sticky-area" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "navigation" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-8" }, [
+                _c("div", { staticClass: "main-menu" }, [
+                  _c("nav", { staticClass: "navbar navbar-expand-lg" }, [
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "collapse navbar-collapse justify-content-center",
+                        attrs: { id: "navbarSupportedContent" }
+                      },
+                      [
+                        _c("ul", { staticClass: "navbar-nav m-auto" }, [
+                          _c(
+                            "li",
+                            { staticClass: "nav-item active" },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "nav-link active",
+                                  attrs: { to: "/" }
+                                },
+                                [_vm._v("Home")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            { staticClass: "nav-item" },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { index: "0", to: "/about-us" }
+                                },
+                                [_vm._v("About us +")]
+                              ),
+                              _vm._v(" "),
+                              _c("ul", { staticClass: "sub-menu" }, [
+                                _vm._m(3),
+                                _vm._v(" "),
+                                _c(
+                                  "li",
+                                  [
+                                    _c(
+                                      "router-link",
+                                      { attrs: { to: "/infographics" } },
+                                      [_vm._v("Infographics")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            { staticClass: "nav-item" },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { to: "gallery" }
+                                },
+                                [_vm._v("Gallery")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _vm._m(4),
+                          _vm._v(" "),
+                          _vm._m(5),
+                          _vm._v(" "),
+                          _vm._m(6)
+                        ])
+                      ]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _vm._m(7)
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header___sk_shop" }, [
-      _c("div", { staticClass: "header-top-area absolate-header" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-lg-6 col-md-12 col-sm-12" }, [
-              _c("ul", [
-                _c("li", [
-                  _c("a", { attrs: { href: "tel://+2348117088281" } }, [
-                    _c("i", { staticClass: "fa fa-map-marker" }),
-                    _vm._v(
-                      " Call us\n                +234 811 708 8281.\n              "
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "mailto:info@sawi-env.org" } }, [
-                    _c("i", { staticClass: "fa fa-envelope" }),
-                    _vm._v(
-                      "\n                info@sawi-env.org\n              "
-                    )
-                  ])
+    return _c("div", { staticClass: "header-top-area absolate-header" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6 col-md-12 col-sm-12" }, [
+            _c("ul", [
+              _c("li", [
+                _c("a", { attrs: { href: "tel://+2348117088281" } }, [
+                  _c("i", { staticClass: "fa fa-map-marker" }),
+                  _vm._v(
+                    " Call us\n                +234 811 708 8281.\n              "
+                  )
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-6 col-md-12 col-sm-12 text-right" },
-              [
-                _c("div", { staticClass: "social-icon" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "lab la-facebook-f" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "lab la-twitter" })
-                  ])
-                ])
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "header-area absolate-header theme-3" }, [
-        _c("div", { staticClass: "sticky-area" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "navigation" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-lg-2" }, [
-                  _c("div", { staticClass: "logo" }, [
-                    _c(
-                      "a",
-                      { staticClass: "navbar-brand", attrs: { href: "#" } },
-                      [
-                        _c("img", {
-                          attrs: {
-                            src: "public/assets/front/img/main-logo.png",
-                            alt: ""
-                          }
-                        })
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-8" }, [
-                  _c("div", { staticClass: "main-menu" }, [
-                    _c("nav", { staticClass: "navbar navbar-expand-lg" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "navbar-toggler",
-                          attrs: {
-                            type: "button",
-                            "data-toggle": "collapse",
-                            "data-target": "#navbarSupportedContent",
-                            "aria-controls": "navbarSupportedContent",
-                            "aria-expanded": "false",
-                            "aria-label": "Toggle navigation"
-                          }
-                        },
-                        [
-                          _c("span", { staticClass: "navbar-toggler-icon" }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "navbar-toggler-icon" }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "navbar-toggler-icon" })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "collapse navbar-collapse justify-content-center",
-                          attrs: { id: "navbarSupportedContent" }
-                        },
-                        [
-                          _c("ul", { staticClass: "navbar-nav m-auto" }, [
-                            _c("li", { staticClass: "nav-item active" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "nav-link active",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Home")]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("About us +")]
-                              ),
-                              _vm._v(" "),
-                              _c("ul", { staticClass: "sub-menu" }, [
-                                _c("li", [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("News/Media")
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Infographics")
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c("a", { staticClass: "nav-link" }, [
-                                _vm._v("Gallery")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c("a", { staticClass: "nav-link" }, [
-                                _vm._v("Events")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Volunteer")]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "nav-item" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Contact")]
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-2 text-right" }, [
-                  _c("div", { staticClass: "header-right-content" }, [
-                    _c("a", { staticClass: "main-btn", attrs: { href: "#" } }, [
-                      _vm._v("Donate Now")
-                    ])
-                  ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "mailto:info@sawi-env.org" } }, [
+                  _c("i", { staticClass: "fa fa-envelope" }),
+                  _vm._v("\n                info@sawi-env.org\n              ")
                 ])
               ])
             ])
-          ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-6 col-md-12 col-sm-12 text-right" },
+            [
+              _c("div", { staticClass: "social-icon" }, [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "lab la-facebook-f" })
+                ]),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "lab la-twitter" })
+                ])
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-2" }, [
+      _c("div", { staticClass: "logo" }, [
+        _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "public/assets/front/img/main-logo.png", alt: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "navbar-toggler",
+        attrs: {
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#navbarSupportedContent",
+          "aria-controls": "navbarSupportedContent",
+          "aria-expanded": "false",
+          "aria-label": "Toggle navigation"
+        }
+      },
+      [
+        _c("span", { staticClass: "navbar-toggler-icon" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "navbar-toggler-icon" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "navbar-toggler-icon" })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("News/Media")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link" }, [_vm._v("Events")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+        _vm._v("Volunteer")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+        _vm._v("Contact")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-2 text-right" }, [
+      _c("div", { staticClass: "header-right-content" }, [
+        _c("a", { staticClass: "main-btn", attrs: { href: "#" } }, [
+          _vm._v("Donate Now")
         ])
       ])
     ])

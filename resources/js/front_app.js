@@ -42,13 +42,18 @@ let routes = [
             .default
     },
     {
-        path: "/categories",
-        component: require("./components/frontendComponents/pages/categories.vue")
+        path: "/gallery",
+        component: require("./components/frontendComponents/pages/gallery.vue")
             .default
     },
     {
         path: "/about-us",
         component: require("./components/frontendComponents/pages/about_us.vue")
+            .default
+    },
+    {
+        path: "/infographics",
+        component: require("./components/frontendComponents/pages/infographics.vue")
             .default
     },
     // {

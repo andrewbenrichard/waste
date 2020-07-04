@@ -7,7 +7,9 @@ $fa-font-path: "../webfonts";
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
-
+.about_list > li {
+    display: list-item;
+}
 .header-section .main-menu ul li .router-link-exact-active,
 .header-section .main-menu ul li a:hover .router-link-exact-active {
     color: #fb524f;
