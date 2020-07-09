@@ -1,6 +1,6 @@
 <template>
   <div class="about__holder">
-    <topHeader />
+    <topHeader pageTitle="Gallery | " />
 
     <!-- Breadcroumb Area -->
 
@@ -30,7 +30,7 @@
               <h2>
                 We do
                 <b>social</b> work
-                <br />for helpless
+                <br />By reducing waste
               </h2>
             </div>
           </div>
@@ -46,66 +46,81 @@
                 <div class="details">
                   <div class="info">
                     <h5>
-                      <a href="#">Social Worker</a>
+                      <a href="#">Waste Management Event</a>
                     </h5>
                   </div>
                 </div>
               </div>
-              <div class="single-portfolio-item port-bg-2 illustration brand">
+              <div
+                class="single-portfolio-item port-bg-2 illustration brand"
+                style="background-image: url(assets/front/img/gallery1.jpg);"
+              >
                 <div class="details">
                   <div class="info">
                     <h5>
-                      <a href="#">Fair Education</a>
+                      <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a href="assets/img/port-bg-1.jpg">
+                    <a target="_blank" href="assets/img/port-bg-1.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="single-portfolio-item port-bg-3 design print">
+              <div
+                class="single-portfolio-item port-bg-3 design print"
+                style="background-image: url(assets/front/img/gallery2.jpg);"
+              >
                 <div class="details">
                   <div class="info">
                     <h5>
-                      <a href="#">Health Program</a>
+                      <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a href="assets/img/port-bg-3.jpg">
+                    <a target="_blank" href="assets/img/port-bg-3.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="single-portfolio-item wide port-bg-4 illustration print brand">
+              <div
+                class="single-portfolio-item wide port-bg-4 illustration print brand"
+                style="background-image: url(assets/front/img/gallery3.jpg);"
+              >
                 <div class="details">
                   <div class="info">
                     <h5>
-                      <a href="#">Pure Water</a>
+                      <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a href="assets/img/port-bg-4.jpg">
+                    <a target="_blank" href="assets/img/port-bg-4.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="single-portfolio-item wide port-bg-5 design brand">
+              <div
+                class="single-portfolio-item wide port-bg-5 design brand"
+                style="background-image: url(assets/front/img/gallery4.jpg);"
+              >
                 <div class="details">
                   <div class="info">
                     <h5>
-                      <a href="#">Hungry Child</a>
+                      <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a href="assets/img/port-bg-5.jpg">
+                    <a target="_blank" href="assets/img/port-bg-5.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="single-portfolio-item port-bg-6 print">
+              <div
+                class="single-portfolio-item port-bg-6 print"
+                style="background-image: url(assets/front/img/gallery5.jpg);"
+              >
                 <div class="details">
                   <div class="info">
                     <h5>
-                      <a href="#">Nutrition Facts</a>
+                      <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a href="assets/img/port-bg-6.jpg">
+                    <a target="_blank" href="assets/img/port-bg-6.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>

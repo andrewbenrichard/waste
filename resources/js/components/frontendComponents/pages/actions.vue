@@ -1,6 +1,6 @@
 <template>
   <div class="about__holder">
-    <topHeader pageTitle="Infographics | " />
+    <topHeader pageTitle="Actions | " />
 
     <!-- Breadcroumb Area -->
 
@@ -9,9 +9,9 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="breadcroumb-title text-center">
-              <h1>Infographics</h1>
+              <h1>Take Action Agains Waste</h1>
               <h6>
-                <a to="/">Home</a> / Infographics
+                <a href="/">Home</a> / Actions
               </h6>
             </div>
           </div>
@@ -19,25 +19,33 @@
       </div>
     </div>
 
-    <!-- Frequently Asked Question -->
-
-    <div class="faq-section section-padding">
+    <div class="portfolio-area section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-12">
             <div class="section-title">
-              <h6>source: UNEP</h6>
-            </div>
-            <div class="styled-faq">
-              <img src="assets/front/img/PLASTIC_infographic_en.jpg" alt />
+              <h6>Become a volunteer</h6>
+              <h2>
+                Join us reduce
+                <b>waste</b>
+              </h2>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="question-section">
-              <h6>Have any Question?</h6>
-              <form action="https://capricorn-theme.net/html/charry/sendemail.php">
-                <input type="text" name="name" id="name" required placeholder="Full Name" />
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-form">
+              <form name="contact-form" id="contactForm" action="#" method="POST">
+                <input
+                  type="text"
+                  name="name"
+                  v-model="full_name"
+                  :placeholder="[[name]]"
+                  id="name"
+                  required
+                />
                 <input type="email" name="email" id="email" required placeholder="Your E-mail" />
+                <input type="text" name="subject" id="subject" placeholder="Subject" />
                 <textarea
                   name="message"
                   id="message"
@@ -46,9 +54,12 @@
                   required
                   placeholder="How can help you?"
                 ></textarea>
-                <button type="submit" name="submit">Your Question</button>
+                <button type="submit" name="submit">Send Message</button>
               </form>
             </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="assets/front/img/gallery1.jpg" alt />
           </div>
         </div>
       </div>
@@ -66,12 +77,13 @@
               <b>together</b>
             </h2>
           </div>
-          <div class="col-lg-6 col-md-5 wow fadeInUp animated" data-wow-delay=".3s">
-            <a href="#" class="main-btn">Become a Donor</a>
+          <div class="col-lg-6 col-md-5 wow fadeInUp animated" data-wow-delay=".2s">
+            <a href="#" class="main-btn">Become a Volunteer</a>
           </div>
         </div>
       </div>
     </div>
+
     <Bottomfooter />
   </div>
 </template>
@@ -85,6 +97,9 @@ export default {
   components: {
     topHeader,
     Bottomfooter
+  },
+  data: {
+    name: "Full name"
   }
 };
 </script>

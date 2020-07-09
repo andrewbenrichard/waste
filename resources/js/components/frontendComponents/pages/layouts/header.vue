@@ -1,7 +1,7 @@
 <template>
   <div class="header___sk_shop">
     <!-- Header Top Area -->
-
+    <title>{{pageTitle}} Sustainable Africa Waste Initiative</title>
     <div class="header-top-area absolate-header">
       <div class="container">
         <div class="row">
@@ -90,10 +90,10 @@
                           <router-link class="nav-link" to="gallery">Gallery</router-link>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link">Events</a>
+                          <router-link to="/events" class="nav-link">Events</router-link>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Volunteer</a>
+                          <router-link to="/actions" class="nav-link" href="#">Actions</router-link>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Contact</a>
@@ -121,6 +121,11 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 export default {
+  props: {
+    pageTitle: {
+      type: String
+    }
+  },
   mounted() {
     console.log("header mounted.");
   },

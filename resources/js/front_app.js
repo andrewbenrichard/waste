@@ -56,6 +56,16 @@ let routes = [
         component: require("./components/frontendComponents/pages/infographics.vue")
             .default
     },
+    {
+        path: "/events",
+        component: require("./components/frontendComponents/pages/events.vue")
+            .default
+    },
+    {
+        path: "/actions",
+        component: require("./components/frontendComponents/pages/actions.vue")
+            .default
+    },
     // {
     //     path: "/prime_login",
     //     name: "login",

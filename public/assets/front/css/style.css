@@ -890,7 +890,7 @@ textarea:focus::-webkit-input-placeholder {
 	height: 100%;
 	bottom: -20px;
 	left: -5px;
-	background: #01B965;
+	background: #2a9da2;
 	z-index: -1;
 	border-radius: 10px;
 }
@@ -2304,7 +2304,7 @@ p.privacy {
 ============== */
 
 .about-us-bg {
-	background-image: url(../img/about-bg-2.jpg)
+	background-image: url(../img/about-bg-2.png)
 }
 
 .about-us-bg {

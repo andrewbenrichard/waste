@@ -1,6 +1,6 @@
 <template>
   <div class="site-wrapper">
-    <topHeader />
+    <topHeader pageTitle="Home | " />
 
     <!-- Hero Area -->
 
@@ -12,10 +12,10 @@
               <div class="col-lg-12 text-center wow fadeInUp animated" data-wow-delay=".2s">
                 <div class="section-title">
                   <h1>
-                    short content
-                    <b>For this header</b>
+                    A cleaner Africa is a
+                    <b>Sustainable Africa</b>
                   </h1>
-                  <a href="#" class="main-btn">Learn More</a>
+                  <router-link to="about-us" class="main-btn">Learn More</router-link>
                 </div>
               </div>
             </div>
@@ -30,10 +30,10 @@
               <div class="col-lg-12 text-center">
                 <div class="section-title">
                   <h1>
-                    short content
-                    <b>For this header</b>
+                    Reduce - Reuse -
+                    <b>Recycle</b>
                   </h1>
-                  <a href="#" class="main-btn">Learn More</a>
+                  <router-link to="about-us" class="main-btn">Learn More</router-link>
                 </div>
               </div>
             </div>
@@ -49,7 +49,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="about-left">
-              <img class="lazy-image loaded" src="public/assets/front/img/recycle_home.gif" alt />
+              <img class="lazy-image loaded" src="assets/front/img/recycle_home.gif" alt />
             </div>
           </div>
           <div class="col-lg-6">

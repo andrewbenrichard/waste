@@ -12415,6 +12415,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    pageTitle: {
+      type: String
+    }
+  },
   mounted: function mounted() {
     console.log("header mounted.");
   },
@@ -87457,17 +87462,77 @@ var render = function() {
     "div",
     { staticClass: "site-wrapper" },
     [
-      _c("topHeader"),
+      _c("topHeader", { attrs: { pageTitle: "Home | " } }),
       _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1),
+      _c("div", { staticClass: "homepage-slides owl-carousel" }, [
+        _c("div", { staticClass: "single-slide-item" }, [
+          _c("div", { staticClass: "hero-area-content" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "row justify-content-center" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "col-lg-12 text-center wow fadeInUp animated",
+                    attrs: { "data-wow-delay": ".2s" }
+                  },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "section-title" },
+                      [
+                        _vm._m(0),
+                        _vm._v(" "),
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "main-btn",
+                            attrs: { to: "about-us" }
+                          },
+                          [_vm._v("Learn More")]
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "single-slide-item hero-area-bg-2" }, [
+          _c("div", { staticClass: "hero-area-content" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "row justify-content-center" }, [
+                _c("div", { staticClass: "col-lg-12 text-center" }, [
+                  _c(
+                    "div",
+                    { staticClass: "section-title" },
+                    [
+                      _vm._m(1),
+                      _vm._v(" "),
+                      _c(
+                        "router-link",
+                        { staticClass: "main-btn", attrs: { to: "about-us" } },
+                        [_vm._v("Learn More")]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
       _vm._v(" "),
       _vm._m(2),
       _vm._v(" "),
       _vm._m(3),
       _vm._v(" "),
       _vm._m(4),
+      _vm._v(" "),
+      _vm._m(5),
       _vm._v(" "),
       _c("Bottomfooter")
     ],
@@ -87479,59 +87544,18 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "homepage-slides owl-carousel" }, [
-      _c("div", { staticClass: "single-slide-item" }, [
-        _c("div", { staticClass: "hero-area-content" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row justify-content-center" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "col-lg-12 text-center wow fadeInUp animated",
-                  attrs: { "data-wow-delay": ".2s" }
-                },
-                [
-                  _c("div", { staticClass: "section-title" }, [
-                    _c("h1", [
-                      _vm._v(
-                        "\n                  short content\n                  "
-                      ),
-                      _c("b", [_vm._v("For this header")])
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { staticClass: "main-btn", attrs: { href: "#" } }, [
-                      _vm._v("Learn More")
-                    ])
-                  ])
-                ]
-              )
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "single-slide-item hero-area-bg-2" }, [
-        _c("div", { staticClass: "hero-area-content" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row justify-content-center" }, [
-              _c("div", { staticClass: "col-lg-12 text-center" }, [
-                _c("div", { staticClass: "section-title" }, [
-                  _c("h1", [
-                    _vm._v(
-                      "\n                  short content\n                  "
-                    ),
-                    _c("b", [_vm._v("For this header")])
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { staticClass: "main-btn", attrs: { href: "#" } }, [
-                    _vm._v("Learn More")
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
+    return _c("h1", [
+      _vm._v("\n                  A cleaner Africa is a\n                  "),
+      _c("b", [_vm._v("Sustainable Africa")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h1", [
+      _vm._v("\n                  Reduce - Reuse -\n                  "),
+      _c("b", [_vm._v("Recycle")])
     ])
   },
   function() {
@@ -87545,10 +87569,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "about-left" }, [
               _c("img", {
                 staticClass: "lazy-image loaded",
-                attrs: {
-                  src: "public/assets/front/img/recycle_home.gif",
-                  alt: ""
-                }
+                attrs: { src: "assets/front/img/recycle_home.gif", alt: "" }
               })
             ])
           ]),
@@ -87858,6 +87879,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "header___sk_shop" }, [
+    _c("title", [
+      _vm._v(_vm._s(_vm.pageTitle) + " Sustainable Africa Waste Initiative")
+    ]),
+    _vm._v(" "),
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "header-area absolate-header theme-3" }, [
@@ -87945,11 +87970,39 @@ var render = function() {
                             1
                           ),
                           _vm._v(" "),
-                          _vm._m(4),
+                          _c(
+                            "li",
+                            { staticClass: "nav-item" },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { to: "/events" }
+                                },
+                                [_vm._v("Events")]
+                              )
+                            ],
+                            1
+                          ),
                           _vm._v(" "),
-                          _vm._m(5),
+                          _c(
+                            "li",
+                            { staticClass: "nav-item" },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { to: "/actions", href: "#" }
+                                },
+                                [_vm._v("Actions")]
+                              )
+                            ],
+                            1
+                          ),
                           _vm._v(" "),
-                          _vm._m(6)
+                          _vm._m(4)
                         ])
                       ]
                     )
@@ -87957,7 +88010,7 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _vm._m(7)
+              _vm._m(5)
             ])
           ])
         ])
@@ -88057,24 +88110,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("News/Media")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link" }, [_vm._v("Events")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Volunteer")
-      ])
-    ])
   },
   function() {
     var _vm = this
@@ -106266,9 +106301,9 @@ _store__WEBPACK_IMPORTED_MODULE_0__["default"].subscribe(function (mutation) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\ANDREW BEN RICHARD\Desktop\personal growth\waste\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\ANDREW BEN RICHARD\Desktop\personal growth\waste\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\Users\ANDREW BEN RICHARD\Desktop\personal growth\waste\resources\sass\front_app.scss */"./resources/sass/front_app.scss");
+__webpack_require__(/*! C:\Users\ANDREW BEN RICHARD\Desktop\vue projects\waste\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\ANDREW BEN RICHARD\Desktop\vue projects\waste\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\Users\ANDREW BEN RICHARD\Desktop\vue projects\waste\resources\sass\front_app.scss */"./resources/sass/front_app.scss");
 
 
 /***/ })
