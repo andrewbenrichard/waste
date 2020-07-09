@@ -1,5 +1,5 @@
 <script src="js/front_app.js"></script>
-
+ 
  	<!-- Popper JS -->
  	<script src="assets/front/js/popper.min.js"></script>
  	<!-- Bootstrap JS -->
