@@ -12,6 +12,11 @@ use App\Donation;
 use App\DeliveryType;
 use App\Meal;
 use App\Chef;
+
+/* breaker */
+use App\Event;
+use App\EventGallery;
+use App\Shop;
 use App\Testimonial;
 use Illuminate\Support\Carbon;
 
@@ -23,11 +28,27 @@ class ApiController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function chef()
+    public function latestStats()
     {
-        $chef = Chef::first();
-        
-         return response()->json($chef);
+        $meals = Meal::get();
+        foreach ($meals as $meal ) {
+            $date = Carbon::parse($meal->created_at); // now date is a carbon instance
+
+            $category = Category::where('id', $meal->category_id)->first();
+           $all_meals[]= array(
+               'id' => $meal->id, 
+               'meal_name' => $meal->meal_name, 
+               'meal_des' => $meal->meal_des, 
+               'meal_img' => $meal->meal_img, 
+               'meal_date' => $date->diffForHumans(), 
+               'meal_price' => '₦'.$meal->meal_price, 
+               'meal_orders' => null, 
+               'meal_slug' => $meal->meal_slug, 
+               'meal_category' => $category->category_name, 
+            );
+        }
+     
+         return response()->json($all_meals);
     }
     public function adminCategories()
     {
@@ -41,11 +62,36 @@ class ApiController extends Controller
      
          return response()->json($testimonial);
     }
-    public function adminDeliveries()
+    public function adminEvents()
     {
-        $deliveries = DeliveryType::get();
+        $events = Event::get();
      
-         return response()->json($deliveries);
+         return response()->json($events);
+    }
+    public function EventGallery($id)
+    {
+        $gallery = EventGallery::where('event_id', '=', $id)->get();
+     
+         return response()->json($gallery);
+    }
+    public function EventGalleries($slug)
+    {
+        $event = Event::where('event_slug', '=', $slug)->first();
+        $gallery = EventGallery::where('event_id', '=', $event->id)->get();
+     
+         return response()->json($gallery);
+    }
+    public function Gallery()
+    {
+        $gallery = Gallery::get();
+     
+         return response()->json($gallery);
+    }
+    public function Products()
+    {
+        $product = Shop::get();
+     
+         return response()->json($product);
     }
     public function adminMeals()
     {
@@ -166,6 +212,13 @@ class ApiController extends Controller
        
          return response()->json($donate_json);
     }
+    public function singleEvent($slug)
+    {
+        $event = Event::where('event_slug', '=', $slug)->first();
+        
+        
+        return response()->json($event);
+    }
     public function singleArticle($slug)
     {
         $article = Article::where('slug', '=', $slug)->first();
@@ -243,46 +296,20 @@ class ApiController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function ChefStore(Request $request)
+    public function postEventGallery(Request $request)
     {
 
-       
-        $this->validate($request,[
-            'chef_name' => 'required|string',
-            'chef_des' => 'required|string',
-            'chef_img' => 'required',
-            'chef_location' => 'required',
-        ]);
-        $slug = str_slug($request->chef_name, '-');
-        $validator = Validator::make(['chef_name' => $slug], [
-            'slug' => 'required|unique:chefs,chef_name,slug|max:191'
-        ]);
+        $name = time().'.' . explode('/', explode(':', substr($request->gallery_name, 0, strpos(
+            $request->gallery_name, ';'
+        )))[1])[1];
 
-
-        if($request->chef_img){
-            $name = time().'.' . explode('/', explode(':', substr($request->chef_img, 0, strpos(
-                $request->chef_img, ';'
-            )))[1])[1];
-
-            \Image::make($request->chef_img)->save(public_path('uploads/').$name);
-            $chef = Chef::create([
-                'chef_name' => $request['chef_name'],
-                'chef_des' => $request['chef_des'],
-                'chef_location' => $request['chef_location'],
-                'chef_img' => $name,
-                'chef_slug' => $slug,
+            \Image::make($request->gallery_name)->save(public_path('uploads/').$name);
+            $gallery = EventGallery::create([
+                'event_id' => $request['event_id'],
+                'gallery_name' => $name,
             ]);
-        }else {
-            # code...
-            $chef = Chef::create([
-                'chef_name' => $request['chef_name'],
-                'chef_des' => $request['chef_des'],
-                'chef_slug' => $slug,
-                'chef_location' => $request['chef_location'],
-
-                ]);
-            }
-        return response()->json($chef);
+      
+        return response()->json($gallery);
     }
     public function CategoryStore(Request $request)
     {
@@ -322,6 +349,55 @@ class ApiController extends Controller
             }
         return response()->json($category);
     }
+    public function EventStore(Request $request)
+    {
+
+       
+        $this->validate($request,[
+            'event_name' => 'required|string',
+            'event_des' => 'required|string',
+            
+        ]);
+        $slug = str_slug($request->event_name, '-');
+        $validator = Validator::make(['event_name' => $slug], [
+            'event_slug' => 'required|unique:events,event_name,slug|max:191'
+        ]);
+
+
+        if($request->event_img){
+            $name = time().'.' . explode('/', explode(':', substr($request->event_img, 0, strpos(
+                $request->event_img, ';'
+            )))[1])[1];
+
+            \Image::make($request->event_img)->save(public_path('uploads/').$name);
+            $event = Event::create([
+                'event_name' => $request['event_name'],
+                'event_des' => $request['event_des'],
+                'event_location' => $request['event_location'],
+                'event_date' => $request['event_date'],
+                'event_theme' => $request['event_theme'],
+                'event_time' => $request['event_time'],
+                'event_video_url' => $request['event_video_url'],
+                'event_img' => $name,
+                'event_slug' => $slug,
+            ]);
+        }else {
+            # code...
+            $event = Event::create([
+                'event_name' => $request['event_name'],
+                'event_des' => $request['event_des'],
+                'event_location' => $request['event_location'],
+                'event_date' => $request['event_date'],
+                'event_theme' => $request['event_theme'],
+                'event_time' => $request['event_time'],
+                'event_video_url' => $request['event_video_url'],
+                'event_slug' => $slug,
+
+                ]);
+            }
+        return response()->json($event);
+    }
+
     public function TestimonialStore(Request $request)
     {
 
@@ -361,61 +437,7 @@ class ApiController extends Controller
             }
         return response()->json($testimonial);
     }
-    public function DeliveryStore(Request $request)
-    {
-
-       
-        $this->validate($request,[
-            'delivery_name' => 'required|string',
-            'package_time' => 'required|string',
-        ]);
-            # code...
-            $delivery = DeliveryType::create([
-                'delivery_name' => $request['delivery_name'],
-                'package_time' => $request['package_time'],
-                ]);
-           
-        return response()->json($delivery);
-    }
-    public function MealStore(Request $request)
-    {
-
-       
-        $this->validate($request,[
-            'meal_name' => 'required|string',
-            'meal_delivery_type' => 'required',
-            'meal_category' => 'required',
-            'meal_price' => 'required|numeric',
-            'meal_image' => 'required|string',
-            'meal_description' => 'required|string',
-        ]);
-           
-        $slug = str_slug($request->meal_name, '-');
-        $validator = Validator::make(['meal_name' => $slug], [
-            'slug' => 'required|unique:meals,meal_name,slug|max:191'
-        ]);
-
-        $name = null;
-        if($request->meal_image){
-            $name = time().'.' . explode('/', explode(':', substr($request->meal_image, 0, strpos(
-                $request->meal_image, ';'
-            )))[1])[1];
-
-            \Image::make($request->meal_image)->save(public_path('uploads/').$name);
-        }
-
-            $meal = Meal::create([
-                'meal_name' => $request['meal_name'],
-                'category_id' => $request['meal_category'],
-                'meal_price' => $request['meal_price'],
-                'meal_img' => $name,
-                'meal_des' => $request['meal_description'],
-                'meal_slug' => $slug,
-                'delivery_type' => $request['meal_delivery_type'],
-                ]);
-           
-        return response()->json($meal);
-    }
+ 
     public function saveDonation(Request $request)
     {
         $project = Project::where('project_slug', '=', $request->project_slug)->first();
@@ -524,10 +546,9 @@ class ApiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function MealDelete($id)
+    public function EventDelete($id)
     {
-        $meal = Meal::find($id)->delete();
-        // DB::table('projects')->where('id', '', 100)->delete();
+        $event = Event::find($id)->delete();
 
         return $id;
     }

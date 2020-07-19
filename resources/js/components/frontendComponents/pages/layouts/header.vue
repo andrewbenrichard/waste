@@ -87,7 +87,7 @@
                           </ul>
                         </li>
                         <li class="nav-item">
-                          <router-link class="nav-link" to="gallery">Gallery</router-link>
+                          <router-link class="nav-link" to="/gallery">Gallery</router-link>
                         </li>
                         <li class="nav-item">
                           <router-link to="/events" class="nav-link">Events</router-link>
@@ -96,7 +96,7 @@
                           <router-link to="/actions" class="nav-link" href="#">Actions</router-link>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Contact</a>
+                          <router-link class="nav-link" to="/contact">Contact</router-link>
                         </li>
                       </ul>
                     </div>
@@ -105,7 +105,7 @@
               </div>
               <div class="col-lg-2 text-right">
                 <div class="header-right-content">
-                  <a href="#" class="main-btn">Donate Now</a>
+                  <router-link to="/donate" class="main-btn">Donate Now</router-link>
                 </div>
               </div>
             </div>

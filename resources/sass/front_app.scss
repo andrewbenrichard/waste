@@ -25,3 +25,17 @@ $fa-font-path: "../webfonts";
 .testimonial .section-wrapper .carousel-indicators .item.active img {
     width: 55% !important;
 }
+input.form-control {
+    height: 54px;
+    box-shadow: none !important;
+    border: 1px solid #ced4da !important;
+    width: 72%;
+    border-radius: 5px;
+    font-weight: 600;
+}
+textarea#message {
+    width: 72%;
+}
+input#togglelable {
+    width: 4% !important;
+}

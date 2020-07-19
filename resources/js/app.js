@@ -10,13 +10,9 @@ require("./store/subscriber");
 window.Form = Form;
 window.Vue = require("vue");
 
-import moment from "moment";
 import store from "./store";
 import { Form, HasError, AlertError } from "vform";
-// import Vuesax from "vuesax";
 import VueRouter from "vue-router";
-// import "vuesax/dist/vuesax.css"; //Vuesax styles
-// import "material-icons/iconfont/material-icons.css";
 
 Vue.component(HasError.name, HasError);
 Vue.component(AlertError.name, AlertError);
@@ -59,9 +55,9 @@ let routes = [
         }
     },
     {
-        path: "/prime/dashboard/meals",
-        name: "meals",
-        component: require("./components/dashboardComponents/meals.vue")
+        path: "/prime/dashboard/donations",
+        name: "donations",
+        component: require("./components/dashboardComponents/donations.vue")
             .default,
         beforeEnter: (to, from, next) => {
             if (!store.getters["auth/authenticated"]) {
@@ -73,8 +69,21 @@ let routes = [
         }
     },
     {
-        path: "/prime/dashboard/meal/:slug",
-        component: require("./components/dashboardComponents/singles/meal.vue")
+        path: "/prime/dashboard/donation/:slug",
+        component: require("./components/dashboardComponents/singles/donation.vue")
+            .default,
+        beforeEnter: (to, from, next) => {
+            if (!store.getters["auth/authenticated"]) {
+                return next({
+                    name: "login"
+                });
+            }
+            next();
+        }
+    },
+    {
+        path: "/prime/dashboard/event/gallery/:id",
+        component: require("./components/dashboardComponents/create/eventGallery.vue")
             .default,
         beforeEnter: (to, from, next) => {
             if (!store.getters["auth/authenticated"]) {
@@ -100,6 +109,20 @@ let routes = [
         }
     },
     {
+        path: "/prime/dashboard/add-event",
+        name: "addevent",
+        component: require("./components/dashboardComponents/create/event.vue")
+            .default,
+        beforeEnter: (to, from, next) => {
+            if (!store.getters["auth/authenticated"]) {
+                return next({
+                    name: "login"
+                });
+            }
+            next();
+        }
+    },
+    {
         path: "/prime/dashboard/gallery",
         name: "gallery",
         component: require("./components/dashboardComponents/gallery.vue")
@@ -114,9 +137,9 @@ let routes = [
         }
     },
     {
-        path: "/prime/dashboard/meal-contents",
-        name: "meal-contents",
-        component: require("./components/dashboardComponents/mealContents.vue")
+        path: "/prime/dashboard/events",
+        name: "events",
+        component: require("./components/dashboardComponents/events.vue")
             .default,
         beforeEnter: (to, from, next) => {
             if (!store.getters["auth/authenticated"]) {
@@ -128,9 +151,9 @@ let routes = [
         }
     },
     {
-        path: "/prime/dashboard/meal-ingredients",
-        name: "meal-ingredients",
-        component: require("./components/dashboardComponents/mealIngredients.vue")
+        path: "/prime/dashboard/volunteers",
+        name: "volunteers",
+        component: require("./components/dashboardComponents/volunteers.vue")
             .default,
         beforeEnter: (to, from, next) => {
             if (!store.getters["auth/authenticated"]) {
@@ -142,36 +165,9 @@ let routes = [
         }
     },
     {
-        path: "/prime/dashboard/delivery-types",
-        name: "delivery-types",
-        component: require("./components/dashboardComponents/deliveryTypes.vue")
-            .default,
-        beforeEnter: (to, from, next) => {
-            if (!store.getters["auth/authenticated"]) {
-                return next({
-                    name: "login"
-                });
-            }
-            next();
-        }
-    },
-    {
-        path: "/prime/dashboard/chefs",
-        name: "chefs",
-        component: require("./components/dashboardComponents/chef.vue").default,
-        beforeEnter: (to, from, next) => {
-            if (!store.getters["auth/authenticated"]) {
-                return next({
-                    name: "login"
-                });
-            }
-            next();
-        }
-    },
-    {
-        path: "/prime/dashboard/testimonials",
-        name: "testimonials",
-        component: require("./components/dashboardComponents/testimonials.vue")
+        path: "/prime/dashboard/products",
+        name: "products",
+        component: require("./components/dashboardComponents/products.vue")
             .default,
         beforeEnter: (to, from, next) => {
             if (!store.getters["auth/authenticated"]) {

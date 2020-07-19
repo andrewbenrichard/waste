@@ -24,9 +24,13 @@ Route::group(['prefix'=> 'auth','namespace' => 'API'], function(){
         Route::get('me', 'Auth\MeController');
 });
 Route::group(['prefix'=> 'sc_admin','namespace' => 'API'], function(){
-        /* chef */
-        Route::get('chef', 'ApiController@chef');
-        Route::post('post/chef', 'ApiController@ChefStore');
+        /* events */
+        Route::get('events', 'ApiController@adminEvents');
+        Route::get('events/gallery/{id}', 'ApiController@EventGallery');
+        Route::post('post/event', 'ApiController@EventStore');
+        Route::delete('delete/event/{id}', 'ApiController@EventDelete');
+        Route::post('post/event/gallery', 'ApiController@postEventGallery');
+
 
         /* category */
         Route::get('categories', 'ApiController@adminCategories');
@@ -72,15 +76,17 @@ for front end side
 */
 Route::group(['prefix'=> 'sc_front','namespace' => 'API'], function(){
         /* category */
+        Route::get('lateststats', 'ApiController@latestStats');
         Route::get('categories', 'ApiController@frontCategories');
-        Route::get('chef', 'ApiController@chef');
         Route::get('top_article', 'ApiController@FrontTopArticle');
         Route::get('articles_mini', 'ApiController@FrontArticlesMini');
         Route::get('testimonials', 'ApiController@frontTestimonials');
 
-        /* delivery */
-        Route::get('deliveries', 'ApiController@adminDeliveries');
-        Route::get('single/deliveries/{slug}', 'ApiController@singleProject');
+        /* events */
+        Route::get('events', 'ApiController@adminEvents');
+        Route::get('single/event/{slug}', 'ApiController@singleEvent');
+        Route::get('events/gallery/{slug}', 'ApiController@EventGalleries');
+
         /* meals */
         Route::get('meals', 'ApiController@frontMeals');
         Route::get('single/meal/{slug}', 'ApiController@frontSingleMeal');

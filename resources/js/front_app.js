@@ -10,8 +10,6 @@ window.Vue = require("vue");
 
 import store from "./store";
 require("./store/subscriber");
-// import "vuesax/dist/vuesax.css"; //Vuesax styles
-import "material-icons/iconfont/material-icons.css";
 import { Form, HasError, AlertError } from "vform";
 
 window.Form = Form;
@@ -22,13 +20,13 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 // Vue.use(Vuesax);
-import VueProgressBar from "vue-progressbar";
+// import VueProgressBar from "vue-progressbar";
 
-Vue.use(VueProgressBar, {
-    color: "rgb(143, 255, 199)",
-    failedColor: "red",
-    height: "15px"
-});
+// Vue.use(VueProgressBar, {
+//     color: "rgb(143, 255, 199)",
+//     failedColor: "red",
+//     height: "15px"
+// });
 let routes = [
     {
         path: "",
@@ -62,6 +60,11 @@ let routes = [
             .default
     },
     {
+        path: "/event/:slug",
+        component: require("./components/frontendComponents/pages/singles/event.vue")
+            .default
+    },
+    {
         path: "/actions",
         component: require("./components/frontendComponents/pages/actions.vue")
             .default
@@ -83,8 +86,8 @@ let routes = [
     //         .default
     // },
     {
-        path: "/chefs",
-        component: require("./components/frontendComponents/pages/chefs.vue")
+        path: "/donate",
+        component: require("./components/frontendComponents/pages/donate.vue")
             .default
     },
     {

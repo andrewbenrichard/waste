@@ -1,4 +1,3 @@
-<title>Foodie Admin Panel</title>
 <link rel="stylesheet" href="/css/app.css">
 <link href="/backend/assets/css/loader.css" rel="stylesheet" type="text/css" />
 <script src="/backend/assets/js/loader.js"></script>

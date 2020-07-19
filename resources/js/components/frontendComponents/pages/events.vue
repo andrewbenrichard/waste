@@ -1,5 +1,5 @@
 <template>
-  <div class="about__holder">
+  <div>
     <topHeader pageTitle="Events | " />
 
     <!-- Breadcroumb Area -->
@@ -58,7 +58,10 @@
     </div>-->
 
     <div class="event-area section-padding">
-      <div class="container">
+      <div class="container" v-if="events.length">
+        <Events v-bind:events="events" />
+      </div>
+      <div class="container" v-else>
         <div class="row">
           <div class="col-lg-12 mar-bt-30 text-center">
             <div class="section-title">
@@ -98,12 +101,29 @@
 <script>
 import topHeader from "./layouts/header.vue";
 import Bottomfooter from "./layouts/footer.vue";
+import Events from "./widgets/_events.vue";
 
 export default {
   mounted() {},
+  data() {
+    return {
+      events: {}
+    };
+  },
   components: {
     topHeader,
-    Bottomfooter
+    Bottomfooter,
+    Events
+  },
+  methods: {
+    EventsLoader() {
+      axios
+        .get("/api/sc_front/events")
+        .then(({ data }) => (this.events = data));
+    }
+  },
+  created() {
+    this.EventsLoader();
   }
 };
 </script>
