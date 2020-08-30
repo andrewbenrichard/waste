@@ -41,7 +41,7 @@
             <div class="portfolio-list">
               <div
                 class="single-portfolio-item large design illustration"
-                style="background-image: url(assets/front/img/IMG_4922.jpg);"
+                style="background-image: url(/public/assets/front/img/IMG_4922.jpg);"
               >
                 <div class="details">
                   <div class="info">
@@ -53,14 +53,14 @@
               </div>
               <div
                 class="single-portfolio-item port-bg-2 illustration brand"
-                style="background-image: url(assets/front/img/gallery1.jpg);"
+                style="background-image: url(/public/assets/front/img/gallery1.jpg);"
               >
                 <div class="details">
                   <div class="info">
                     <h5>
                       <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a target="_blank" href="assets/img/port-bg-1.jpg">
+                    <a target="_blank" href="/public/assets/img/port-bg-1.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>
@@ -68,14 +68,14 @@
               </div>
               <div
                 class="single-portfolio-item port-bg-3 design print"
-                style="background-image: url(assets/front/img/gallery2.jpg);"
+                style="background-image: url(/public/assets/front/img/gallery2.jpg);"
               >
                 <div class="details">
                   <div class="info">
                     <h5>
                       <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a target="_blank" href="assets/img/port-bg-3.jpg">
+                    <a target="_blank" href="/public/assets/img/port-bg-3.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>
@@ -83,14 +83,14 @@
               </div>
               <div
                 class="single-portfolio-item wide port-bg-4 illustration print brand"
-                style="background-image: url(assets/front/img/gallery3.jpg);"
+                style="background-image: url(/public/assets/front/img/gallery3.jpg);"
               >
                 <div class="details">
                   <div class="info">
                     <h5>
                       <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a target="_blank" href="assets/img/port-bg-4.jpg">
+                    <a target="_blank" href="/public/assets/img/port-bg-4.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>
@@ -98,14 +98,14 @@
               </div>
               <div
                 class="single-portfolio-item wide port-bg-5 design brand"
-                style="background-image: url(assets/front/img/gallery4.jpg);"
+                style="background-image: url(/public/assets/front/img/gallery4.jpg);"
               >
                 <div class="details">
                   <div class="info">
                     <h5>
                       <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a target="_blank" href="assets/img/port-bg-5.jpg">
+                    <a target="_blank" href="/public/assets/img/port-bg-5.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>
@@ -113,14 +113,14 @@
               </div>
               <div
                 class="single-portfolio-item port-bg-6 print"
-                style="background-image: url(assets/front/img/gallery5.jpg);"
+                style="background-image: url(/public/assets/front/img/gallery5.jpg);"
               >
                 <div class="details">
                   <div class="info">
                     <h5>
                       <a href="#">Social Waste Removal</a>
                     </h5>
-                    <a target="_blank" href="assets/img/port-bg-6.jpg">
+                    <a target="_blank" href="/public/assets/img/port-bg-6.jpg">
                       <i class="las la-search-plus"></i>
                     </a>
                   </div>

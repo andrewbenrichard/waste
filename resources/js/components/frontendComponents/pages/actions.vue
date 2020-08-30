@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12">
-            <img src="assets/front/img/gallery1.jpg" alt />
+            <img src="/public//public/assets/front/img/gallery1.jpg" alt />
           </div>
         </div>
       </div>

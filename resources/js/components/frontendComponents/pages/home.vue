@@ -49,7 +49,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="about-left">
-              <img class="lazy-image loaded" src="assets/front/img/recycle_home.gif" alt />
+              <img class="lazy-image loaded" src="/public/assets/front/img/recycle_home.gif" alt />
             </div>
           </div>
           <div class="col-lg-6">

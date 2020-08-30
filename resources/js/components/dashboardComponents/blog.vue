@@ -43,7 +43,7 @@
                   <div class="col-md-4" v-for="article in articles" :key="article.id">
                     <div class="card component-card_9">
                       <img
-                        :src="'/uploads/' + article.article_img"
+                        :src="'/public/uploads/' + article.article_img"
                         class="card-img-top"
                         alt="widget-card-2"
                       />

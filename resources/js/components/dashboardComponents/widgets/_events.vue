@@ -4,7 +4,7 @@
       <div class="card component-card_9">
         <img
           v-show="event.event_img"
-          :src="'/uploads/' + event.event_img"
+          :src="'/public/uploads/' + event.event_img"
           class="card-img-top"
           alt="widget-card-2"
         />

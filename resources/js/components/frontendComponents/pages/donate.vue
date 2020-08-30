@@ -37,7 +37,7 @@
             <div class="cause-details">
               <div class="case-2-img">
                 <a href="#">
-                  <img src="assets/front/img/cause-img-1.jpg" alt />
+                  <img src="/public/assets/front/img/cause-img-1.jpg" alt />
                 </a>
               </div>
               <div class="case-2-texts bg-light-white">

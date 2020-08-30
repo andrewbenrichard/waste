@@ -28,19 +28,19 @@
         <div class="section-wrapper">
           <ul class="tab-bar">
             <li class="tablinks" id="defaultOpen" onclick="openCity(event, 'burger')">
-              <img src="/assets/front/images/product/icon/01.png" alt="food-product" />
+              <img src="//public/assets/front/images/product/icon/01.png" alt="food-product" />
               <span>Burger Menu</span>
             </li>
             <li class="tablinks" onclick="openCity(event, 'pizza')">
-              <img src="/assets/front/images/product/icon/02.png" alt="food-product" />
+              <img src="//public/assets/front/images/product/icon/02.png" alt="food-product" />
               <span>fizza menu</span>
             </li>
             <li class="tablinks" onclick="openCity(event, 'snaks')">
-              <img src="/assets/front/images/product/icon/03.png" alt="food-product" />
+              <img src="//public/assets/front/images/product/icon/03.png" alt="food-product" />
               <span>snaks Menu</span>
             </li>
             <li class="tablinks" onclick="openCity(event, 'drinks')">
-              <img src="/assets/front/images/product/icon/04.png" alt="food-product" />
+              <img src="//public/assets/front/images/product/icon/04.png" alt="food-product" />
               <span>drinks Menu</span>
             </li>
           </ul>
@@ -49,7 +49,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/01.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/01.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -74,7 +74,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/02.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/02.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -99,7 +99,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/03.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/03.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -124,7 +124,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/04.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/04.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -149,7 +149,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/04.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/04.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -174,7 +174,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/03.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/03.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -199,7 +199,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/02.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/02.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -224,7 +224,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/01.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/01.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -253,7 +253,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/04.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/04.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -278,7 +278,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/03.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/03.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -303,7 +303,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/02.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/02.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -328,7 +328,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/01.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/01.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -357,7 +357,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/01.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/01.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -382,7 +382,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/02.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/02.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -407,7 +407,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/03.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/03.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -432,7 +432,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/04.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/04.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -457,7 +457,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/04.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/04.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -482,7 +482,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/03.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/03.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -511,7 +511,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/04.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/04.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -536,7 +536,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/03.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/03.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -561,7 +561,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/02.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/02.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -586,7 +586,7 @@
               <div class="col-lg-6 col-12">
                 <div class="product-item style-2">
                   <div class="product-thumb">
-                    <img src="/assets/front/images/product/01.jpg" alt="food-product" />
+                    <img src="//public/assets/front/images/product/01.jpg" alt="food-product" />
                     <span class="price">$20</span>
                   </div>
                   <div class="product-content">
@@ -637,7 +637,7 @@
 
     <!-- <div class="col-lg-4 col-md-6" v-for="project in projects" :key="project.id">
             <div class="single-causes">
-              <img :src="'//assets/front/img/donate/' + project.project_img" alt="image" />
+              <img :src="'///public/assets/front/img/donate/' + project.project_img" alt="image" />
               <div class="icon">
                 <i class="flaticon-book-1"></i>
               </div>

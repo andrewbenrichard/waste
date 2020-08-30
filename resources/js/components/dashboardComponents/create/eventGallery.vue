@@ -45,7 +45,7 @@
                 <div class="col-md-4" v-for="(item, index) in galleries" :key="index">
                   <div class="card component-card_2">
                     <img
-                      :src="'/uploads/' + item.gallery_name"
+                      :src="'/public/uploads/' + item.gallery_name"
                       class="card-img-top"
                       alt="widget-card-2"
                     />

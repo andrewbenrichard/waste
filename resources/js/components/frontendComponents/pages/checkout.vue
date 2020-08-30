@@ -31,7 +31,7 @@
                             <div class="causes-details-image">
                                 <img
                                     :src="
-                                        '/assets/img/donate/' +
+                                        '//public/assets/img/donate/' +
                                             project.project_img
                                     "
                                     alt="image"

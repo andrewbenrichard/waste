@@ -29,7 +29,7 @@
               <h6>source: UNEP</h6>
             </div>
             <div class="styled-faq">
-              <img src="assets/front/img/PLASTIC_infographic_en.jpg" alt />
+              <img src="/public/assets/front/img/PLASTIC_infographic_en.jpg" alt />
             </div>
           </div>
           <div class="col-lg-4">

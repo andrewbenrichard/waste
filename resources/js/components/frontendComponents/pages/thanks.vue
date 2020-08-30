@@ -9,7 +9,7 @@
                 <div class="d-table-cell">
                     <div class="container">
                         <div class="error-content">
-                            <img src="assets/img/404.png" alt="error" />
+                            <img src="/public/assets/img/404.png" alt="error" />
 
                             <h3>Thank you for your donation</h3>
                             <router-link index="0" class="default-btn" to="/">

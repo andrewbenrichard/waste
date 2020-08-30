@@ -26,7 +26,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="about-image">
-              <img src="assets/front//img/about-us.png" alt />
+              <img src="/public/assets/front//img/about-us.png" alt />
             </div>
           </div>
           <div class="col-lg-5">
@@ -76,7 +76,7 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="about-image">
-              <img src="assets/front//img/about-us-2.jpg" alt />
+              <img src="/public/assets/front//img/about-us-2.jpg" alt />
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="about-image">
-              <img src="assets/front//img/about-us-3.jpg" alt />
+              <img src="/public/assets/front//img/about-us-3.jpg" alt />
             </div>
           </div>
           <div class="col-lg-5">

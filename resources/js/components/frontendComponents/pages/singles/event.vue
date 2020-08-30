@@ -25,7 +25,7 @@
         <div class="row">
           <div class="col-lg-10 col-md-12">
             <div class="event-details">
-              <img src="assets/img/event-bg-3.jpg" alt />
+              <img src="/public/assets/img/event-bg-3.jpg" alt />
               <p class="event-date">
                 <i class="las la-calendar-check"></i>
                 {{event.event_date}}
@@ -45,7 +45,7 @@
         </div>
         <div class="row">
           <div class="col-md-4" v-for="(item, index) in galleries" :key="index">
-            <img :src="'/uploads/'+item.gallery_name" />
+            <img :src="'/public/uploads/'+item.gallery_name" />
           </div>
         </div>
       </div>
