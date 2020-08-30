@@ -44450,7 +44450,10 @@ var staticRenderFns = [
           _c("div", { staticClass: "col-lg-6" }, [
             _c("div", { staticClass: "about-image" }, [
               _c("img", {
-                attrs: { src: "assets/front//img/about-us.png", alt: "" }
+                attrs: {
+                  src: "/public/assets/front//img/about-us.png",
+                  alt: ""
+                }
               })
             ])
           ]),
@@ -44514,7 +44517,10 @@ var staticRenderFns = [
           _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-6" }, [
             _c("div", { staticClass: "about-image" }, [
               _c("img", {
-                attrs: { src: "assets/front//img/about-us-2.jpg", alt: "" }
+                attrs: {
+                  src: "/public/assets/front//img/about-us-2.jpg",
+                  alt: ""
+                }
               })
             ])
           ])
@@ -44532,7 +44538,10 @@ var staticRenderFns = [
           _c("div", { staticClass: "col-lg-6" }, [
             _c("div", { staticClass: "about-image" }, [
               _c("img", {
-                attrs: { src: "assets/front//img/about-us-3.jpg", alt: "" }
+                attrs: {
+                  src: "/public/assets/front//img/about-us-3.jpg",
+                  alt: ""
+                }
               })
             ])
           ]),
@@ -44915,7 +44924,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-6 col-md-12 col-sm-12" }, [
-      _c("img", { attrs: { src: "assets/front/img/gallery1.jpg", alt: "" } })
+      _c("img", {
+        attrs: { src: "/public//public/assets/front/img/gallery1.jpg", alt: "" }
+      })
     ])
   },
   function() {
@@ -45003,7 +45014,8 @@ var render = function() {
                 _c("div", { staticClass: "article-image" }, [
                   _c("img", {
                     attrs: {
-                      src: "/assets/img/gallery/" + _vm.article.article_img,
+                      src:
+                        "/public/assets/img/gallery/" + _vm.article.article_img,
                       alt: "image"
                     }
                   })
@@ -45057,7 +45069,7 @@ var render = function() {
                                 _c("img", {
                                   attrs: {
                                     src:
-                                      "/assets/img/gallery/" +
+                                      "/public/assets/img/gallery/" +
                                       article_top.article_img,
                                     alt: "image"
                                   }
@@ -46965,7 +46977,8 @@ var render = function() {
                 _c("div", { staticClass: "causes-details-image" }, [
                   _c("img", {
                     attrs: {
-                      src: "/assets/img/donate/" + _vm.project.project_img,
+                      src:
+                        "//public/assets/img/donate/" + _vm.project.project_img,
                       alt: "image"
                     }
                   })
@@ -47927,7 +47940,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "case-2-img" }, [
       _c("a", { attrs: { href: "#" } }, [
         _c("img", {
-          attrs: { src: "assets/front/img/cause-img-1.jpg", alt: "" }
+          attrs: { src: "/public/assets/front/img/cause-img-1.jpg", alt: "" }
         })
       ])
     ])
@@ -48185,7 +48198,8 @@ var staticRenderFns = [
                   staticClass:
                     "single-portfolio-item large design illustration",
                   staticStyle: {
-                    "background-image": "url(assets/front/img/IMG_4922.jpg)"
+                    "background-image":
+                      "url(/public/assets/front/img/IMG_4922.jpg)"
                   }
                 },
                 [
@@ -48207,7 +48221,8 @@ var staticRenderFns = [
                   staticClass:
                     "single-portfolio-item port-bg-2 illustration brand",
                   staticStyle: {
-                    "background-image": "url(assets/front/img/gallery1.jpg)"
+                    "background-image":
+                      "url(/public/assets/front/img/gallery1.jpg)"
                   }
                 },
                 [
@@ -48224,7 +48239,7 @@ var staticRenderFns = [
                         {
                           attrs: {
                             target: "_blank",
-                            href: "assets/img/port-bg-1.jpg"
+                            href: "/public/assets/img/port-bg-1.jpg"
                           }
                         },
                         [_c("i", { staticClass: "las la-search-plus" })]
@@ -48239,7 +48254,8 @@ var staticRenderFns = [
                 {
                   staticClass: "single-portfolio-item port-bg-3 design print",
                   staticStyle: {
-                    "background-image": "url(assets/front/img/gallery2.jpg)"
+                    "background-image":
+                      "url(/public/assets/front/img/gallery2.jpg)"
                   }
                 },
                 [
@@ -48256,7 +48272,7 @@ var staticRenderFns = [
                         {
                           attrs: {
                             target: "_blank",
-                            href: "assets/img/port-bg-3.jpg"
+                            href: "/public/assets/img/port-bg-3.jpg"
                           }
                         },
                         [_c("i", { staticClass: "las la-search-plus" })]
@@ -48272,7 +48288,8 @@ var staticRenderFns = [
                   staticClass:
                     "single-portfolio-item wide port-bg-4 illustration print brand",
                   staticStyle: {
-                    "background-image": "url(assets/front/img/gallery3.jpg)"
+                    "background-image":
+                      "url(/public/assets/front/img/gallery3.jpg)"
                   }
                 },
                 [
@@ -48289,7 +48306,7 @@ var staticRenderFns = [
                         {
                           attrs: {
                             target: "_blank",
-                            href: "assets/img/port-bg-4.jpg"
+                            href: "/public/assets/img/port-bg-4.jpg"
                           }
                         },
                         [_c("i", { staticClass: "las la-search-plus" })]
@@ -48305,7 +48322,8 @@ var staticRenderFns = [
                   staticClass:
                     "single-portfolio-item wide port-bg-5 design brand",
                   staticStyle: {
-                    "background-image": "url(assets/front/img/gallery4.jpg)"
+                    "background-image":
+                      "url(/public/assets/front/img/gallery4.jpg)"
                   }
                 },
                 [
@@ -48322,7 +48340,7 @@ var staticRenderFns = [
                         {
                           attrs: {
                             target: "_blank",
-                            href: "assets/img/port-bg-5.jpg"
+                            href: "/public/assets/img/port-bg-5.jpg"
                           }
                         },
                         [_c("i", { staticClass: "las la-search-plus" })]
@@ -48337,7 +48355,8 @@ var staticRenderFns = [
                 {
                   staticClass: "single-portfolio-item port-bg-6 print",
                   staticStyle: {
-                    "background-image": "url(assets/front/img/gallery5.jpg)"
+                    "background-image":
+                      "url(/public/assets/front/img/gallery5.jpg)"
                   }
                 },
                 [
@@ -48354,7 +48373,7 @@ var staticRenderFns = [
                         {
                           attrs: {
                             target: "_blank",
-                            href: "assets/img/port-bg-6.jpg"
+                            href: "/public/assets/img/port-bg-6.jpg"
                           }
                         },
                         [_c("i", { staticClass: "las la-search-plus" })]
@@ -48534,7 +48553,10 @@ var staticRenderFns = [
             _c("div", { staticClass: "about-left" }, [
               _c("img", {
                 staticClass: "lazy-image loaded",
-                attrs: { src: "assets/front/img/recycle_home.gif", alt: "" }
+                attrs: {
+                  src: "/public/assets/front/img/recycle_home.gif",
+                  alt: ""
+                }
               })
             ])
           ]),
@@ -48756,7 +48778,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "styled-faq" }, [
               _c("img", {
                 attrs: {
-                  src: "assets/front/img/PLASTIC_infographic_en.jpg",
+                  src: "/public/assets/front/img/PLASTIC_infographic_en.jpg",
                   alt: ""
                 }
               })
@@ -50363,7 +50385,7 @@ var render = function() {
             _c("div", { staticClass: "col-lg-10 col-md-12" }, [
               _c("div", { staticClass: "event-details" }, [
                 _c("img", {
-                  attrs: { src: "assets/img/event-bg-3.jpg", alt: "" }
+                  attrs: { src: "/public/assets/img/event-bg-3.jpg", alt: "" }
                 }),
                 _vm._v(" "),
                 _c("p", { staticClass: "event-date" }, [
@@ -50404,7 +50426,9 @@ var render = function() {
             { staticClass: "row" },
             _vm._l(_vm.galleries, function(item, index) {
               return _c("div", { key: index, staticClass: "col-md-4" }, [
-                _c("img", { attrs: { src: "/uploads/" + item.gallery_name } })
+                _c("img", {
+                  attrs: { src: "/public/uploads/" + item.gallery_name }
+                })
               ])
             }),
             0
@@ -50488,7 +50512,7 @@ var render = function() {
                 { staticClass: "error-content" },
                 [
                   _c("img", {
-                    attrs: { src: "assets/img/404.png", alt: "error" }
+                    attrs: { src: "/public/assets/img/404.png", alt: "error" }
                   }),
                   _vm._v(" "),
                   _c("h3", [_vm._v("Thank you for your donation")]),
