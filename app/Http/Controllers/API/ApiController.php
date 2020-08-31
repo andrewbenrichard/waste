@@ -9,11 +9,11 @@ use App\Article;
 use App\Category;
 use App\Gallery;
 use App\Donation;
-use App\DeliveryType;
-use App\Meal;
-use App\Chef;
+use App\Sellers;
 
 /* breaker */
+use App\ProductGallery;
+use App\Product;
 use App\Event;
 use App\EventGallery;
 use App\Shop;
@@ -219,22 +219,7 @@ class ApiController extends Controller
         
         return response()->json($event);
     }
-    public function singleArticle($slug)
-    {
-        $article = Article::where('slug', '=', $slug)->first();
-        
-        $date = Carbon::parse($article->created_at); // now date is a carbon instance
-
-        $article_single =array(
-            'id' => $article->id,
-            'article_title' => $article->article_title,
-            'article_body' => $article->article_body,
-            'article_img' => $article->article_img,
-            'article_date' => $date->diffForHumans(),
-        );
-        return response()->json($article_single);
-    }
-
+  
 
 
     /** 
@@ -243,34 +228,48 @@ class ApiController extends Controller
      *
      **/
     
-    public function frontMeals()
+    public function frontProducts()
     {
-        $meals = Meal::get();
-        foreach ($meals as $meal ) {
-            $date = Carbon::parse($meal->created_at); // now date is a carbon instance
-
-            $category = Category::where('id', $meal->category_id)->first();
-            $delivery_type = DeliveryType::where('id', $meal->delivery_type)->first();
-          
+     $products = Product::where('product_status', '=', 2)->get();
+        foreach ($products as $product ) {
+            $date = Carbon::parse($product->created_at); // now date is a carbon instance         
             
-           $all_meals[]= array(
-               'id' => $meal->id, 
-               'meal_name' => $meal->meal_name, 
-               'meal_des' => $meal->meal_des, 
-               'meal_img' => $meal->meal_img, 
-               'meal_date' => $date->diffForHumans(), 
-               'meal_price' => '₦'.$meal->meal_price, 
-               'meal_orders' => null, 
-               'meal_slug' => $meal->meal_slug, 
-               'meal_category' => $category->category_name, 
-               'meal_category_img' => $category->category_img, 
-               'meal_delivery_type' => $delivery_type->delivery_name, 
-               'meal_delivery_time' => $delivery_type->package_time, 
+           $all_products[]= array(
+               'id' => $product->id, 
+               'product_name' => $product->product_name, 
+               'product_des' => $product->product_des, 
+               'product_main_img' => $product->product_main_img, 
+               'product_price' => '₦'.$product->product_price, 
+               'product_slug' => $product->product_slug, 
             );
         }
      
-         return response()->json($all_meals);
+         return response()->json($all_products);
     }
+
+    public function frontSingleProduct($slug)
+    {
+        $product = Product::where('slug', '=', $slug)->first();
+        
+        $date = Carbon::parse($product->created_at); // now date is a carbon instance
+
+        if ($product) {
+            $product_gallery = ProductGallery::where('product_id', '=', $product_id)->get();
+            $row['product_gallery'] = $product_gallery;
+
+        }
+        $product_single =array(
+            'id' => $product->id, 
+            'product_name' => $product->product_name, 
+            'product_des' => $product->product_des, 
+            'product_main_img' => $product->product_main_img, 
+            'product_price' => '₦'.$product->product_price, 
+            'product_slug' => $product->product_slug, 
+        );
+        $row['product_single'] = $product_single;
+        return response()->json($row);
+    }
+
 
     public function frontTestimonials()
     {

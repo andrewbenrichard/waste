@@ -42,7 +42,7 @@
               <div
                 class="single-portfolio-item large design illustration"
                 style="background-image: url(/public/assets/front/img/IMG_4922.jpg);"
-              >
+              > 
                 <div class="details">
                   <div class="info">
                     <h5>

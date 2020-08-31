@@ -87,9 +87,9 @@ Route::group(['prefix'=> 'sc_front','namespace' => 'API'], function(){
         Route::get('single/event/{slug}', 'ApiController@singleEvent');
         Route::get('events/gallery/{slug}', 'ApiController@EventGalleries');
 
-        /* meals */
-        Route::get('meals', 'ApiController@frontMeals');
-        Route::get('single/meal/{slug}', 'ApiController@frontSingleMeal');
+        /* products */
+        Route::get('product_listings', 'ApiController@frontProducts');
+        Route::get('single/product/listing/{slug}', 'ApiController@frontSingleProduct');
       
         /* articles */
         Route::get('articles', 'ApiController@articles');

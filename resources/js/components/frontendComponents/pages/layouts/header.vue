@@ -45,9 +45,9 @@
             <div class="row">
               <div class="col-lg-2">
                 <div class="logo">
-                  <a class="navbar-brand" href="#">
+                  <router-link class="navbar-brand" to="/">
                     <img src="public/assets/front/img/main-logo.png" alt />
-                  </a>
+                  </router-link>
                 </div>
               </div>
               <div class="col-lg-8">
@@ -79,7 +79,7 @@
                           <router-link class="nav-link" index="0" to="/about-us">About us +</router-link>
                           <ul class="sub-menu">
                             <li>
-                              <a href="#">News/Media</a>
+                              <router-link to="blog">News/Media</router-link>
                             </li>
                             <li>
                               <router-link to="/infographics">Infographics</router-link>
@@ -93,7 +93,10 @@
                           <router-link to="/events" class="nav-link">Events</router-link>
                         </li>
                         <li class="nav-item">
-                          <router-link to="/actions" class="nav-link" href="#">Actions</router-link>
+                          <router-link to="/actions" class="nav-link" >Actions</router-link>
+                        </li>
+                        <li class="nav-item">
+                          <router-link to="/shop" class="nav-link" >Shop</router-link>
                         </li>
                         <li class="nav-item">
                           <router-link class="nav-link" to="/contact">Contact</router-link>

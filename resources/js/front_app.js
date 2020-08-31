@@ -69,6 +69,31 @@ let routes = [
         component: require("./components/frontendComponents/pages/actions.vue")
             .default
     },
+    {
+        path: "/shop",
+        component: require("./components/frontendComponents/pages/store/shop.vue")
+            .default
+    },
+    {
+        path: "/account",
+        component: require("./components/frontendComponents/pages/store/account.vue")
+            .default
+    },
+    {
+        path: "/checkout",
+        component: require("./components/frontendComponents/pages/store/checkout.vue")
+            .default
+    },
+    {
+        path: "/orders",
+        component: require("./components/frontendComponents/pages/store/orders.vue")
+            .default
+    },
+    {
+        path: "/shop/:slug",
+        component: require("./components/frontendComponents/pages/store/single_product.vue")
+            .default
+    },
     // {
     //     path: "/prime_login",
     //     name: "login",
