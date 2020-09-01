@@ -80,11 +80,6 @@ let routes = [
             .default
     },
     {
-        path: "/checkout",
-        component: require("./components/frontendComponents/pages/store/checkout.vue")
-            .default
-    },
-    {
         path: "/orders",
         component: require("./components/frontendComponents/pages/store/orders.vue")
             .default
@@ -92,6 +87,16 @@ let routes = [
     {
         path: "/shop/:slug",
         component: require("./components/frontendComponents/pages/store/single_product.vue")
+            .default
+    },
+    {
+        path: "/checkout",
+        component: require("./components/frontendComponents/pages/store/checkout.vue")
+            .default
+    },
+    {
+        path: "/cart",
+        component: require("./components/frontendComponents/pages/store/cart.vue")
             .default
     },
     // {
@@ -113,16 +118,6 @@ let routes = [
     {
         path: "/donate",
         component: require("./components/frontendComponents/pages/donate.vue")
-            .default
-    },
-    {
-        path: "/checkout",
-        component: require("./components/frontendComponents/pages/checkout.vue")
-            .default
-    },
-    {
-        path: "/cart",
-        component: require("./components/frontendComponents/pages/cart.vue")
             .default
     },
     {

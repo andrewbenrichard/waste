@@ -239,7 +239,7 @@ class ApiController extends Controller
                'product_name' => $product->product_name, 
                'product_des' => $product->product_des, 
                'product_main_img' => $product->product_main_img, 
-               'product_price' => '₦'.$product->product_price, 
+               'product_price' => $product->product_price, 
                'product_slug' => $product->product_slug, 
             );
         }
@@ -249,25 +249,20 @@ class ApiController extends Controller
 
     public function frontSingleProduct($slug)
     {
-        $product = Product::where('slug', '=', $slug)->first();
+        $product = Product::where('product_slug', '=', $slug)->first();
         
         $date = Carbon::parse($product->created_at); // now date is a carbon instance
 
-        if ($product) {
-            $product_gallery = ProductGallery::where('product_id', '=', $product_id)->get();
-            $row['product_gallery'] = $product_gallery;
-
-        }
+      
         $product_single =array(
             'id' => $product->id, 
             'product_name' => $product->product_name, 
             'product_des' => $product->product_des, 
             'product_main_img' => $product->product_main_img, 
-            'product_price' => '₦'.$product->product_price, 
+            'product_price' => $product->product_price, 
             'product_slug' => $product->product_slug, 
         );
-        $row['product_single'] = $product_single;
-        return response()->json($row);
+        return response()->json($product_single);
     }
 
 

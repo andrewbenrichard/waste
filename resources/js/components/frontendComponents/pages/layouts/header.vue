@@ -107,9 +107,7 @@
                 </div>
               </div>
               <div class="col-lg-2 text-right">
-                <div class="header-right-content">
-                  <router-link to="/donate" class="main-btn">Donate Now</router-link>
-                </div>
+                  <cartHeader /> 
               </div>
             </div>
           </div>
@@ -123,6 +121,7 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
+import cartHeader from "./cart";
 export default {
   props: {
     pageTitle: {
@@ -131,6 +130,9 @@ export default {
   },
   mounted() {
     console.log("header mounted.");
+  },
+  components:{
+    cartHeader
   },
   data: () => ({
     activeItem: 0

@@ -2,7 +2,7 @@
   <div class="col-md-4">
         <router-link :to="'/shop/'+product.product_slug">
             <div class="image_holder">
-              <img :src="'/products/' + product.product_main_img"/>
+              <img :src="'/public/products//' + product.product_main_img"/>
             </div>
         </router-link>
             <div class="product_des">
@@ -11,11 +11,11 @@
                 <h4>{{product.product_name}}</h4>
               </div>
               <div class="product_price">
-                <p>{{product.product_price}}</p>
+                <p>₦{{product.product_price}}</p>
               </div>
                 </router-link>
               <div class="product_cta">
-                <button @click="addToCart(product.id)" class="add_cart"> Add to cart</button>
+                <button @click="addToCart()" class="add_cart"> Add to cart</button>
               </div>
             </div>
           </div>
@@ -64,9 +64,12 @@ export default {
     };
   },
   methods: {
-    //  addToCart(id) {
-    //   this.$store.dispatch("ADD_Item", id);
-    // }
+     addToCart() {
+      this.$store.dispatch("addProductToCart", {
+        product: this.product,
+        quantity: 1
+      });
+    }
   }
 };
 </script>
