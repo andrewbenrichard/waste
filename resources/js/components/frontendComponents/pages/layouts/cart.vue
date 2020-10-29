@@ -1,20 +1,19 @@
 <template>
      <div class="header-right-content">
           <router-link to="/donate" class="main-btn">Donate Now</router-link>
-                          <router-link to="/cart" class="cart-btn">
-                          
- <i class="fa fa-shopping-cart"></i>  
- <span>{{cartItemCount}}</span>   
-                      </router-link>
+                         
 
     </div>
 </template>
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from "vuex";
 export default {
-    computed: mapGetters({
-        cartItemCount:"cartItemCount"
+    computed: {
+    ...mapGetters({
+      authenticated: "auth/authenticated",
+      user: "auth/user"
     })
+  },
     
 }
 </script>

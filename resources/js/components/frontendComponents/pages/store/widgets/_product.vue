@@ -2,7 +2,7 @@
   <div class="col-md-4">
         <router-link :to="'/shop/'+product.product_slug">
             <div class="image_holder">
-              <img :src="'/public/products//' + product.product_main_img"/>
+              <img :src="'/products/' + product.product_main_img"/>
             </div>
         </router-link>
             <div class="product_des">

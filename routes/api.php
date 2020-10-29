@@ -49,11 +49,8 @@ Route::group(['prefix'=> 'sc_admin','namespace' => 'API'], function(){
         Route::get('single/project/{slug}', 'ApiController@singleProject');
         Route::post('post/delivery_type', 'ApiController@DeliveryStore');
         Route::delete('delete/project/{id}', 'ApiController@ProjectDelete');
-        /* meals */
-        Route::get('meals', 'ApiController@adminMeals');
-        Route::get('single/meal/{slug}', 'ApiController@singleMeal');
-        Route::post('post/meal', 'ApiController@MealStore');
-        Route::delete('delete/meal/{id}', 'ApiController@MealDelete');
+        
+       
         /* donaion */
         Route::post('post/donation', 'ApiController@saveDonation');
         Route::get('donations', 'ApiController@donations');
@@ -97,6 +94,8 @@ Route::group(['prefix'=> 'sc_front','namespace' => 'API'], function(){
         Route::post('post/article', 'ApiController@ArticleStore');
         Route::delete('delete/article/{id}', 'ApiController@ArticleDelete');
      
-       
+        /* cart */
+        Route::post('post/order', 'ApiController@saveOrder');
+        Route::get('orders/items/{user_email}', 'ApiController@getUserOrder');
 });
 // Route::apiResources(['user' => 'API\UserController']);

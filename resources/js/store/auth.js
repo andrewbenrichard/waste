@@ -24,7 +24,7 @@ export default {
     },
     actions: {
         async signIn({ dispatch }, credentials) {
-            let response = await axios.post("api/auth/signin", credentials);
+            let response = await axios.post("/api/auth/signin", credentials);
             return dispatch("attempt", response.data.token);
         },
 
@@ -37,7 +37,7 @@ export default {
                 return;
             }
             try {
-                let response = await axios.get("api/auth/me");
+                let response = await axios.get("/api/auth/me");
                 commit("SET_USER", response.data);
             } catch (e) {
                 commit("SET_TOKEN", null);
@@ -46,7 +46,7 @@ export default {
             }
         },
         signOut({ commit }) {
-            return axios.post("api/auth/signout").then(() => {
+            return axios.post("/api/auth/signout").then(() => {
                 commit("SET_TOKEN", null);
                 commit("SET_USER", null);
             });

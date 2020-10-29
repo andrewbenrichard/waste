@@ -107,7 +107,9 @@
                 </div>
               </div>
               <div class="col-lg-2 text-right">
-                  <cartHeader /> 
+                   <div class="header-right-content">
+                      <router-link to="/donate" class="main-btn">Donate Now</router-link>
+                    </div>
               </div>
             </div>
           </div>
@@ -115,13 +117,13 @@
       </div>
     </div>
 
+
     <!-- Hero Area -->
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import cartHeader from "./cart";
 export default {
   props: {
     pageTitle: {
@@ -132,7 +134,6 @@ export default {
     console.log("header mounted.");
   },
   components:{
-    cartHeader
   },
   data: () => ({
     activeItem: 0
@@ -145,7 +146,8 @@ export default {
   },
   methods: {
     ...mapActions({
-      signOutAction: "auth/signOut"
+      signOutAction: "auth/signOut",
+      signIn: "auth/signIn"
     }),
     signOut() {
       this.signOutAction().then(() => {
@@ -153,7 +155,12 @@ export default {
           name: "home"
         });
       });
-    }
+    }, 
+  },
+  computed: {
+    user(){
+    return this.$store.state.auth.user;
+    },
   }
 };
 </script>

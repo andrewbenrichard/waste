@@ -4,6 +4,8 @@ namespace App\Http\Controllers\API\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Cart;
+
 
 class MeController extends Controller
 {
@@ -19,10 +21,14 @@ class MeController extends Controller
     public function __invoke(Request $request)
     {
         $user = $request->user();
+        $cart = Cart::where('user_id', $user->id)->count();
+
 
         return response()->json([
+            'id' => $user->id,
             'email' => $user->email,
             'name' => $user->name,
+            'cart_count' => $cart,
         ]);
     }
 

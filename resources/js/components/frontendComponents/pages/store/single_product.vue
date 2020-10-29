@@ -26,7 +26,7 @@
           <div class="col-md-4">
             <div class="product_img">
               
-            <img :src="'/public/products//'+product.product_main_img" alt=""/>
+            <img :src="'/products/'+product.product_main_img" alt=""/>
             </div>
           </div>
           <div class="col-md-8">
@@ -40,7 +40,7 @@
               <div class="single_product_des">
                 <h3>{{product.product_des}}</h3>
               </div>
-               <button class="single_add_cart"> Add to cart</button>
+             <button class="single_add_cart" @click="orderModal"> Order</button>
             </div>
           </div>
         </div>
@@ -79,6 +79,90 @@
       </div>
     </div>
 
+<div v-if="!user"
+      class="modal fade"
+      id="orderModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"> order {{product.product_name}} for ₦{{product.product_price}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+           <div class="modal-body">
+              <div class="shiping-box">
+               <div class="calculate-shiping">
+                    <h4>Shipping</h4>
+                    <div class="row">
+                     
+                            <div class="form-group col-md-6">
+                            <label for="fullname">
+                                Fullname
+                                <span class="required_mark">*</span>
+                              </label>
+                            <input v-model="form.full_name" type="text" name="full_name" required class="form-control" id="fullname"  placeholder="Fullname Name">
+                          </div>
+
+
+
+                            <div class="form-group col-md-6">
+                            <label for="number">Phone Number<span class="required_mark">*</span></label>
+                            <input type="text" required v-model="form.number" name="number" class="form-control" id="number"  placeholder="Phone Number">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="address">Address <span class="required_mark">*</span></label>
+                            <input type="text" required v-model="form.address"  name="address" class="form-control" id="address" aria-describedby="addressHelp" placeholder="Enter address">
+                            <small id="addressHelp" class="form-text text-muted">Enter your address where the item would be delivered.</small>
+                          </div>                           
+                            
+                            <div class="form-group col-md-6">
+                            <label for="email">Email <span class="required_mark">*</span></label>
+                            <input type="text" v-model="form.email" name="email" required class="form-control" id="email"  placeholder="Email">
+                          </div>
+                  
+                     
+
+                    <div class="outline-select col-md-12">
+                       <div class="causes-details-btn">
+                      <paystack
+                          class="btn btn-green"
+                          :amount="
+                                                            product.product_price + '00'
+                                                        "
+                          :email="form.email"
+                          :paystackkey="
+                                                            paystackkey
+                                                        "
+                          :reference="reference"
+                          :callback="callback"
+                          :close="close"
+                          :embed="false"
+                        >
+                          <i class="fas fa-money-bill-alt"></i>
+                         Order Product
+                          <span></span>
+                        </paystack>
+                    </div>
+                    </div>
+                   
+
+                    </div>
+                   
+                  
+                    
+                  </div>
+            </div>
+
+           </div>
+        </div>
+      </div>
+    </div>
     <Bottomfooter />
   </div>
 </template>
@@ -126,36 +210,111 @@ button.single_add_cart {
     font-weight: 600;
     margin-top: 26px;
 }
+.modal-content {
+    width: 650px;
+}
+button.payButton.btn.btn-green {
+    background: #2a9da2;
+    color: #fff;
+    padding: 11px 27px;
+    margin: 25px 0;
+    letter-spacing: 1px;
+}
  </style>
 <script>
+import { mapGetters, mapActions } from "vuex";
 import topHeader from "../layouts/header.vue";
 import Bottomfooter from "../layouts/footer.vue";
 import RelatedProduct from "./widgets/_product.vue";
+import paystack from "vue-paystack";
 
 export default {
   mounted() {
      this.$route.params;
-    this.$store.dispatch("getProduct", this.$route.params.slug)
+    this.$store.dispatch("getProduct", this.$route.params.slug);
+   
   },
   components: {
     topHeader,
     Bottomfooter,
-    RelatedProduct
+    RelatedProduct,
+    paystack
   },
   data() {
     return {
       productData: {},
-      
+       paystackkey: "pk_test_9cf8f7877b460aa72b3521126e2a5e20dbdbe7e2", //paystack public key
+      form: new Form({
+        full_name: "",
+        address: "",
+        email: "",
+        number: "",
+        amount: "",
+        product_id: ""
+      }),
+      savingBtn: false
     }
   },
+   computed: {
+    ...mapGetters({
+      authenticated: "auth/authenticated",
+      user: "auth/user",
+      
+    }),
+    reference() {
+      let text = "";
+      let possible =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+      for (let i = 0; i < 10; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+      return text;
+    }
+  },
+    methods:{
+       ...mapActions({
+      signIn: "auth/signIn"
+    }),
+    callback: function(response) {
+      console.log(response);
+      this.saveOrder();
+    },
+    close: function() {
+      console.log("Payment closed");
+    },
+   
+    saveOrder() {
+      console.log("form payment entered");
+      this.form
+        .post("/api/sc_front/post/order")
+        .then(() => {
+          window.location.href = "/myorders/"+this.form.email;
+        })
+        .catch(() => {});
+    },
+    orderModal() {
+      $("#orderModal").modal("show");
+    },
+    },
   computed: {
     product(){
     return this.$store.state.product;
     },
     products(){
     return this.$store.state.products;
-    }
+    },
+    user(){
+    return this.$store.state.auth.user;
+    },
+     
+     dataproduct:function(){
+            this.form.product_id = this.$store.state.product.id;
+            this.form.amount = this.$store.state.product.product_price;
+
+    },
   },
+ 
 
 };
 </script>

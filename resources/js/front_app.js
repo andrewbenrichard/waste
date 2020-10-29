@@ -80,8 +80,8 @@ let routes = [
             .default
     },
     {
-        path: "/orders",
-        component: require("./components/frontendComponents/pages/store/orders.vue")
+        path: "/track-orders",
+        component: require("./components/frontendComponents/pages/track_order.vue")
             .default
     },
     {
@@ -92,6 +92,11 @@ let routes = [
     {
         path: "/checkout",
         component: require("./components/frontendComponents/pages/store/checkout.vue")
+            .default
+    },
+    {
+        path: "/vendors",
+        component: require("./components/frontendComponents/pages/vendors.vue")
             .default
     },
     {
@@ -125,11 +130,7 @@ let routes = [
         component: require("./components/frontendComponents/pages/coming_soon.vue")
             .default
     },
-    {
-        path: "/menu",
-        component: require("./components/frontendComponents/pages/menu.vue")
-            .default
-    },
+  
     {
         path: "/blog",
         component: require("./components/frontendComponents/pages/blog.vue")
@@ -142,7 +143,7 @@ let routes = [
     },
     {
         path: "/myorders",
-        component: require("./components/frontendComponents/pages/auth_users/orders.vue")
+        component: require("./components/frontendComponents/pages/track_order.vue")
             .default
     },
     {
@@ -160,14 +161,11 @@ let routes = [
         component: require("./components/frontendComponents/pages/single_product.vue")
             .default
     },
-    {
-        path: "/chef/:slug",
-        component: require("./components/frontendComponents/pages/single_chef.vue")
-            .default
-    },
+   
     {
         path: "/myorders/:slug",
-        component: require("./components/frontendComponents/pages/auth_users/order_tracker.vue")
+        name: "orders",
+        component: require("./components/frontendComponents/pages/track_order.vue")
             .default
     },
     {

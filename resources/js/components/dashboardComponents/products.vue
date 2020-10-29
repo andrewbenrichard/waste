@@ -44,68 +44,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="modal fade"
-      id="addNew"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <form @submit.prevent="createProject">
-            <div class="modal-body">
-              <div class="form-group">
-                <input
-                  v-model="form.project_name"
-                  type="text"
-                  name="project_name"
-                  placeholder="name"
-                  class="form-control"
-                  :class="{
-                                        'is-invalid': form.errors.has(
-                                            'project_name'
-                                        )
-                                    }"
-                />
-                <has-error :form="form" field="project_name"></has-error>
-              </div>
-              <div class="form-group">
-                <textarea
-                  v-model="form.project_des"
-                  name="project_des"
-                  cols="30"
-                  rows="10"
-                  placeholder="project_des"
-                  class="form-control"
-                  :class="{
-                                        'is-invalid': form.errors.has(
-                                            'project_des'
-                                        )
-                                    }"
-                ></textarea>
-                <has-error :form="form" field="project_des"></has-error>
-              </div>
-              <div class="form-group">
-                <input name="project_img" @change="CreateImage" type="file" />
-                <has-error :form="form" field="project_img"></has-error>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Create</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+  
   </div>
 </template>
 
@@ -158,10 +97,10 @@ export default {
       };
       reader.readAsDataURL(file);
     },
-    newModal() {
-      this.form.reset();
-      $("#addNew").modal("show");
-    },
+    // newModal() {
+    //   this.form.reset();
+    //   $("#addNew").modal("show");
+    // },
     editModal(project) {
       this.form.reset();
       $("#addNew").modal("show");

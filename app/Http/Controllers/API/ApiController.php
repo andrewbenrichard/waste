@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use Illuminate\Http\Request;
 use Validator;
+use DB;
 use App\Http\Controllers\Controller;
 use App\Article;
 use App\Category;
@@ -17,7 +18,10 @@ use App\Product;
 use App\Event;
 use App\EventGallery;
 use App\Shop;
+use App\Order;
+use App\User;
 use App\Testimonial;
+use App\Project;
 use Illuminate\Support\Carbon;
 
 
@@ -245,6 +249,29 @@ class ApiController extends Controller
         }
      
          return response()->json($all_products);
+    }
+    public function getUserOrder($user_email)
+    {
+     $orders = Order::where('email', $user_email)->get();
+
+    foreach($orders as $order){
+                $date = Carbon::parse($order->created_at); // now date is a carbon instance
+
+        $product = Product::where('id', $order->product_id)->first();
+        $row[] = array(
+            'id' => $order->id,
+            'ref' => 'sawi_'.$order->id,
+            'email' => $order->email,
+            'number' => $order->number,
+            'amount' => $order->amount,
+            'status' => $order->status,
+            'address' => $order->address,
+            'date' => $date->diffForHumans(),
+            'product'=> $product
+        );
+    }
+     
+         return response()->json($row);
     }
 
     public function frontSingleProduct($slug)
@@ -508,6 +535,33 @@ class ApiController extends Controller
             }
       
         return response()->json($article);
+    }
+    public function saveOrder(Request $request)
+    {
+
+       
+        $this->validate($request,[
+            'full_name' => 'required|string',          
+            'address' => 'required|string',          
+            'number' => 'required',          
+            'email' => 'required|string',          
+            'amount' => 'required',          
+            'product_id' => 'required',          
+
+        ]);
+
+
+            $data = Order::create([
+                'product_id' => $request['product_id'],
+                'full_name' => $request['full_name'],
+                'address' => $request['address'],
+                'number' => $request['number'],
+                'email' => $request['email'],
+                'amount' => $request['amount'],
+                ]);
+            
+      
+        return response()->json($data);
     }
 
     

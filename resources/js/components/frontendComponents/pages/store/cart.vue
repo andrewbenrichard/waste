@@ -23,7 +23,7 @@
     <div class="shop-cart padding-tb">
       <div class="container">
         <div class="section-wrapper row">
-          <div class="col-md-6" v-if="cart_items.length">
+          <div class="col-md-5" v-if="cart_items.length">
             <div class="col-md-12">
               <h4>Cart Items</h4>
             </div>
@@ -41,7 +41,7 @@
                   <td class="product-item">
                     <div class="p-thumb">
                       <router-link :to="'/shop/'+cart.product.product_slug">
-                        <img :src="'/public/products//'+cart.product.product_main_img" />
+                        <img :src="'/products/'+cart.product.product_main_img" />
                       </router-link>
                     </div>
                    
@@ -62,30 +62,74 @@
                
               </tbody>
             </table>
+             <div class="col-md-12 col-12">
+                  <div class="cart-overview">
+                    <h4>Cart Totals</h4>
+                    
+                      <div>
+                        <span class="pull-left">Cart Subtotal</span>
+                        <span class="total_cal">₦{{cartTotalPrice}}</span>
+                      </div>
+                      <div>
+                        <span class="pull-left">Shipping and Handling</span>
+                        <span class="total_cal">₦1500 Shipping fee</span>
+                      </div>
+                      <div v-if="cartTotalPrice">
+                        <span class="pull-left">Order Total</span>
+                        <span class="main_total total_cal">₦{{cartTotalPrice + 1500}}</span>
+                      </div>
+                      <div v-else>
+                        <span class="pull-left">Order Total</span>
+                        <span class="main_total total_cal">₦0</span>
+                      </div>
+
+                    
+                   
+                  </div>
+                </div>
           </div>
-          <div class="col-md-6" v-else>
+          <div class="col-md-5" v-else>
             <h4>No item in cart</h4>
             <router-link class="main-btn" to="/shop">
               Back to store
             </router-link>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-7">
             <div class="shiping-box">
-              <div class="row">
-                <div class="col-md-6 col-12">
-                  <div class="calculate-shiping">
+               <div class="calculate-shiping">
                     <h4>Shipping</h4>
-                   <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" aria-describedby="addressHelp" placeholder="Enter address">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                    <label for="firstname">First Name <span class="required_mark">*</span></label>
+                    <input type="text" required class="form-control" id="firstname"  placeholder="First Name">
+                  </div>
+
+
+
+                    <div class="form-group col-md-6">
+                    <label for="lastname">Last Name <span class="required_mark">*</span></label>
+                    <input type="text" required class="form-control" id="lastname"  placeholder="Last Name">
+                  </div>
+                   <div class="form-group col-md-6">
+                    <label for="address">Address <span class="required_mark">*</span></label>
+                    <input type="text" required class="form-control" id="address" aria-describedby="addressHelp" placeholder="Enter address">
                     <small id="addressHelp" class="form-text text-muted">Enter your address where the item would be delivered.</small>
                   </div>
-                   <div class="form-group">
-                    <label for="city">City</label>
-                    <input type="text" class="form-control" id="city" placeholder="Enter city">
+                   <div class="form-group col-md-6">
+                    <label for="city">City <span class="required_mark">*</span></label>
+                    <input type="text" required class="form-control" id="city" placeholder="Enter city">
                   </div>
                     
-                    <div class="outline-select">
+                    <div class="form-group col-md-6">
+                    <label for="number">Phone Number <span class="required_mark">*</span></label>
+                    <input type="text" required class="form-control" id="number"  placeholder="Phone Number">
+                  </div>
+                    
+                    <div class="form-group col-md-6">
+                    <label for="email">Email <span class="required_mark">*</span></label>
+                    <input type="text"  required class="form-control" id="email"  placeholder="Email">
+                  </div>
+                    <div class="outline-select col-md-12">
                       <select>
                         <option >Select State</option>
                         <option value="saab">Abuja</option>
@@ -96,39 +140,19 @@
                       <span class="select-icon">
                         <i class="icofont-caret-down"></i>
                       </span>
-                    </div>
-                   
-                    
-                  </div>
-                </div>
-                <div class="col-md-6 col-12">
-                  <div class="cart-overview">
-                    <h4>Cart Totals</h4>
-                    <ul class="cart_total">
-                      <li>
-                        <span class="pull-left">Cart Subtotal</span>
-                        <p>₦{{cartTotalPrice}}</p>
-                      </li>
-                      <li>
-                        <span class="pull-left">Shipping and Handling</span>
-                        <p>₦1500 Shipping fee</p>
-                      </li>
-                      <li v-if="cartTotalPrice">
-                        <span class="pull-left">Order Total</span>
-                        <p class="main_total">₦{{cartTotalPrice + 1500}}</p>
-                      </li>
-                      <li v-else>
-                        <span class="pull-left">Order Total</span>
-                        <p class="main_total">₦0</p>
-                      </li>
 
-                    </ul>
-                    <button type="submit" class="food-btn">
+                       <button v-if="cart_items.length" type="submit" class="food-btn">
                       <span>Checkout</span>
                     </button>
+                    </div>
+                   
+                   
+
+                    </div>
+                   
+                  
+                    
                   </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -162,36 +186,68 @@ import topHeader from "../layouts/header.vue";
 import Bottomfooter from "../layouts/footer.vue";
 
 export default {
-  mounted() {},
+  mounted() {
+    this.loadCart();
+  },
   components: {
     topHeader,
     Bottomfooter
   },
-  data: {
-    name: "Full name"
+  data() {
+    return {
+      user_id: this.$store.state.auth.user.id,
+      cart_items: {},
+      cartTotalPrice: ""
+    }
   }, 
-  computed: {
-         cart_items(){
-    return this.$store.state.cart;
+   computed: {
+   
+    datauser:function(){
+            // this.user_id = this.$store.state.auth.user.id;
+
     },
-     cartTotalPrice(){
-        return this.$store.getters.cartTotalPrice;
+   },
+  methods:{
+   loadCart() {
+      axios
+        .get("/api/sc_front/cart/items/"+this.user_id)
+        .then(({ data }) => (this.cart_items = data));
     }
   },
-  methods:{
-    removeProductFromCart(product){
-      this.$store.dispatch("removeProductFromCart", product);
-    }
+  created(){
+    
   }
 };
 </script>
 
 <style>
+.cart-overview>h4 {
+    font-weight: 700;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+.cart-overview>div>span {
+    font-weight: 500;
+    padding-right: 13px;
+}
+.cart-overview>div>.total_cal {
+    margin: 0px;
+    font-weight: 900;
+}
   .p-thumb>a>img {
     width: 85px;
 }
+span.required_mark {
+    font-size: 19px;
+    color: red;
+    font-weight: 900;
+}
 .shop-cart.padding-tb {
     margin-top: 60px;
+}
+.cart-overview {
+    margin-top: 49px;
+    font-weight: 500;
 }
 a.delete_item {
     border-radius: 3px;
