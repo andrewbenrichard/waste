@@ -19,9 +19,9 @@
 
 
 Route::group(['prefix'=> 'auth','namespace' => 'API'], function(){
-        Route::post('signin', 'Auth\LoginController')->middleware('cors');
-        Route::post('signout', 'Auth\LogoutController')->middleware('cors');
-        Route::get('me', 'Auth\MeController')->middleware('cors');
+        Route::post('signin', 'Auth\LoginController');
+        Route::post('signout', 'Auth\LogoutController');
+        Route::get('me', 'Auth\MeController');
 });
 Route::group(['prefix'=> 'sc_admin','namespace' => 'API'], function(){
         /* events */
