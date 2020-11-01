@@ -35,7 +35,7 @@
                                     <router-link to="#">About Us</router-link>
                                     <router-link to="#">Our Events</router-link>
                                     <router-link to="/track-orders">Track orders</router-link>
-                                    <router-link to="/vendors">Vendors</router-link>
+                                    <router-link to="vendors.sawi-env.org">Vendors</router-link>
                                     <router-link to="#">Contact</router-link>
                                 </li>
                             </ul>
